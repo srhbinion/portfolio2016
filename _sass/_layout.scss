@@ -11,6 +11,7 @@
 
 /* Logo */
 .site-title img {
+    margin-left: 10%;
     padding: 1% 2%;
     width: 125px;
 }
@@ -24,6 +25,7 @@
 
 .site-nav {
     float: right;
+    margin-right: 30px;
     
     .menu-icon {
         display: none;
@@ -40,12 +42,16 @@
         line-height: $base-line-height;
 
         &:last-child {
-            border: 2px solid $brand-color-teal;
             border-radius: 2px;
             background-color: $brand-color-teal;
             color: #fff;
-            margin: 0;
+            margin: 0px;
             padding: 10px;
+            
+            &:hover {
+                text-decoration: none;
+                background-color: darken($brand-color-teal, 25%);
+            }
             
 
         }
