@@ -2,51 +2,51 @@
  * Site header
  */
 .site-header {
-    min-height: 600px;
+    min-height: 500px;
     background-color: $background-color;
-    background-image: url("../assets/concrete/concrete_wall_2.png");
-
+    background-image: url("/assets/concrete/concrete_wall_2.png");
+    
     // Positioning context for the mobile navigation icon
-    position: relative;
 }
 
-.site-title {
-    padding-top:1%;
-    float: left;
-    width: 150px;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+/* Logo */
+.site-title img {
+    padding: 1% 2%;
+    width: 125px;
 }
 
+/* hello text */
 .site-welcome {
-    padding: 200px 200px 200px 400px;
-
+    position: relative;
+    margin: 0 10%;
+    padding: 10%;
 }
 
 .site-nav {
-    padding-top:1%;
     float: right;
-    line-height: 56px;
-
+    
     .menu-icon {
         display: none;
+        padding: 0%;
+        
     }
 
     .page-link {
+        display: inline-block;
+        margin-top: 12%;
+        margin-right: 20px;
+        padding-top: 5%;
         color: $text-color;
         line-height: $base-line-height;
-        margin-right: 20px;
 
         &:last-child {
-            width: 150px;
-            height: 44px;
+            border: 2px solid $brand-color-teal;
             border-radius: 2px;
             background-color: $brand-color-teal;
             color: #fff;
-            margin-right: 0px;
+            margin: 0;
+            padding: 10px;
+            
 
         }
 
@@ -59,7 +59,7 @@
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
-        text-align: right;
+        text-align: left;
 
         .menu-icon {
             display: block;
