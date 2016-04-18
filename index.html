@@ -4,10 +4,30 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list">
-   <li >{% for post in site.posts  limit:3 %}
-    <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-img" src="{{ post.img }}" alt="one"></a>
-   {% endfor %}</li>
+  <ul class="content">
+    <li>
+      {% for post in site.posts limit:3 %}
+
+          <section class="sample-post">
+            
+            <ul class="sample-text">
+              <li><h4>{{post.title}}</h4></li>
+              <li><p>{{post.description}}</p></li>
+              <li>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                  <button>VIEW PROJECT</button>
+                </a>
+              </li>
+            </ul>
+            
+            <ul>
+              <li><img src="{{ post.img }}" alt="one"></li>
+            </ul>  
+          
+          </section>
+
+      {% endfor %}
+    </li>
   </ul>
 
 </div>

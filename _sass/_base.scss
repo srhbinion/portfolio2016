@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
 
 
 /**
- * Basic styling $background-color
+ * Basic styling 
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
@@ -45,7 +45,7 @@ ul, ol, dl, figure,
  */
 img {
     max-width: 100%;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 
@@ -203,5 +203,25 @@ pre {
         path {
             fill: $grey-color;
         }
+    }
+}
+
+
+/**
+ * Button
+ */
+
+button {
+    width: 150px;
+    height: 44px;
+    border: 1px solid $brand-color;
+    border-radius: 0.2em;
+    background-color: $brand-color;
+    color: #fff;
+
+    &:hover {
+        background-color: darken($brand-color, 15%);
+        border-color: darken($brand-color, 15%);
+        border-style: inset;
     }
 }

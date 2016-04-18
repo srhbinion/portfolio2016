@@ -42,7 +42,7 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query($on-small) {
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
@@ -141,7 +141,7 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media-query($on-large) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -154,15 +154,13 @@
     }
 }
 
-@include media-query($on-palm) {
+@include media-query($on-small) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-
 
 /**
  * Page content
@@ -194,54 +192,44 @@
     font-size: 24px;
 }
 
-
-
 /**
- * Posts
+ * work-samples
  */
-.post-header {
-    margin-bottom: $spacing-unit;
+
+.content {
+    margin: auto 0;
+    width: 100%;
+    border-top: 1px solid $grey-color-light;
+    list-style-type: none;
+    background-color: #fff;
+
 }
 
-.post-img {
-    border: 2px groove black;
-    margin: 1%;
+.sample-post {
+    margin: $spacing-unit 0;
+    border-bottom: 1px solid $grey-color-light;
+    min-height:250px;
+
+    &:hover {
+        // move image up
+    }
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        float: left;
+
+        li {
+            margin: 0;
+
+            &:last-child {
+                position: inherit;
+                top: 50px;
+            }
+        }
+    }
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+.sample-text {
+    width: 60%;
 }
