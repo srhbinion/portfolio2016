@@ -3,6 +3,7 @@
  */
 .site-header {
     min-height: 100px;
+    padding: 0 $spacing-unit;
 
     
     // Positioning context for the mobile navigation icon
@@ -10,8 +11,7 @@
 
 /* Logo */
 .site-title img {
-    margin-left: 7.5%;
-    padding: 1% 2%;
+    padding: 1% 0;
     width: 125px;
 }
 
@@ -21,8 +21,8 @@
     background-image: url("/assets/concrete/concrete_wall_2.png");
     height: 400px;
     margin: -100px 0 0 0;
-    padding-top: 20%;
-    padding-left: 13.5%;
+    padding-top: 23%;
+    padding-left: 8%;
     
     p {
         font-size: 1.45em;
@@ -60,7 +60,6 @@
                 background-color: darken($brand-color-teal, 25%);
             }
             
-
         }
 
     }
@@ -199,13 +198,12 @@
 .contact-list,
 .social-media-list {
     list-style: none;
-    margin-left: 0;
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    margin-left: $spacing-unit / 2;
     @extend %clearfix;
 }
 
