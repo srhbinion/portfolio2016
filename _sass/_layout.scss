@@ -2,30 +2,37 @@
  * Site header
  */
 .site-header {
-    min-height: 500px;
-    background-color: $background-color;
-    background-image: url("/assets/concrete/concrete_wall_2.png");
+    min-height: 100px;
+
     
     // Positioning context for the mobile navigation icon
 }
 
 /* Logo */
 .site-title img {
-    margin-left: 10%;
+    margin-left: 7.5%;
     padding: 1% 2%;
     width: 125px;
 }
 
 /* hello text */
 .site-welcome {
-    position: relative;
-    margin: 0 10%;
-    padding: 10%;
+    background-color: $background-color;
+    background-image: url("/assets/concrete/concrete_wall_2.png");
+    height: 400px;
+    margin: -100px 0 0 0;
+    padding-top: 20%;
+    padding-left: 13.5%;
+    
+    p {
+        font-size: 1.45em;
+        color: $grey-color-dark;
+    }
 }
 
 .site-nav {
     float: right;
-    margin-right: 30px;
+    margin-right: $spacing-unit;
     
     .menu-icon {
         display: none;
@@ -109,19 +116,84 @@
 
 }
 
+/**
+ * Page content
+ */
+.page-content {
+    padding: 0 $spacing-unit $spacing-unit $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
+}
 
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+/**
+ * work-samples
+ */
+
+.content {
+    margin: auto 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+.sample-post {
+    margin: $spacing-unit 0;
+    border-bottom: 1px solid $grey-color-light;
+    min-height:250px;
+
+    &:hover {
+        // move image up
+    }
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        float: left;
+
+        li {
+            margin: 0;
+
+            &:last-child {
+                position: inherit;
+                top: 50px;
+            }
+        }
+    }
+}
+
+.sample-text {
+    width: 60%;
+}
 
 /**
  * Site footer
  */
 .site-footer {
+    background-color: $grey-color-light;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
@@ -177,76 +249,4 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
-}
-
-/**
- * Page content
- */
-.page-content {
-    padding: 0 $spacing-unit $spacing-unit $spacing-unit;
-    border-bottom: 1px solid $grey-color-light;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-/**
- * work-samples
- */
-
-.content {
-    margin: auto 0;
-    width: 100%;
-    list-style-type: none;
-    background-color: #fff;
-
-}
-
-.sample-post {
-    margin: $spacing-unit 0;
-    border-bottom: 1px solid $grey-color-light;
-    min-height:250px;
-
-    &:hover {
-        // move image up
-    }
-
-    ul {
-        position: relative;
-        list-style-type: none;
-        float: left;
-
-        li {
-            margin: 0;
-
-            &:last-child {
-                position: inherit;
-                top: 50px;
-            }
-        }
-    }
-}
-
-.sample-text {
-    width: 60%;
 }
