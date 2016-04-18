@@ -13,7 +13,7 @@
 .site-title {
     padding-top:1%;
     float: left;
-    width: 50px;
+    width: 150px;
 
     &,
     &:visited {
@@ -22,11 +22,8 @@
 }
 
 .site-welcome {
-    padding: 200px 200px 200px 450px;
+    padding: 200px 200px 200px 400px;
 
-    &:hover {
-        color: $grey-color-dark;
-    }
 }
 
 .site-nav {
