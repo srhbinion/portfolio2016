@@ -2,21 +2,18 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 5px solid $grey-color-dark;
-    min-height: 56px;
+    min-height: 600px;
+    background-color: $background-color;
+    background-image: url("../assets/concrete/concrete_wall_2.png");
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+    padding-top:1%;
     float: left;
+    width: 50px;
 
     &,
     &:visited {
@@ -24,7 +21,16 @@
     }
 }
 
+.site-welcome {
+    padding: 200px 200px 200px 450px;
+
+    &:hover {
+        color: $grey-color-dark;
+    }
+}
+
 .site-nav {
+    padding-top:1%;
     float: right;
     line-height: 56px;
 
@@ -35,11 +41,18 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        margin-right: 20px;
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
+        &:last-child {
+            width: 150px;
+            height: 44px;
+            border-radius: 2px;
+            background-color: $brand-color-teal;
+            color: #fff;
+            margin-right: 0px;
+
         }
+
     }
 
     @include media-query($on-small) {
@@ -90,6 +103,7 @@
             margin-left: 20px;
         }
     }
+
 }
 
 
@@ -166,7 +180,8 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0 $spacing-unit $spacing-unit $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
 }
 
 .page-heading {
@@ -199,7 +214,6 @@
 .content {
     margin: auto 0;
     width: 100%;
-    border-top: 1px solid $grey-color-light;
     list-style-type: none;
     background-color: #fff;
 
