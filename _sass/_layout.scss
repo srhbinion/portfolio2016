@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 5px solid $grey-color-dark;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -171,18 +171,6 @@
     padding: $spacing-unit 0;
 }
 
-.green {
-    background-color:green;
-    height: 200px;
-    width: 200px;
-}
-
-.blue {
-    background-color:blue;
-    height: 200px;
-    width: 200px;
-}
-
 .page-heading {
     font-size: 20px;
 }
@@ -213,6 +201,11 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+}
+
+.post-img {
+    border: 2px groove black;
+    margin: 1%;
 }
 
 .post-title {

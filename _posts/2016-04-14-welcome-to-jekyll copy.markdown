@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sample One"
+title:  "Sample Two"
 date:   2016-04-14 22:27:07 -0500
 categories: jekyll update
 img: /assets/one.jpg
