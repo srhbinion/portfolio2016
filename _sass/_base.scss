@@ -11,13 +11,12 @@ dl, dd, ol, ul, figure {
 
 
 /**
- * Basic styling $background-color
+ * Basic styling 
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
-    background-image: url("/assets/concrete/concrete_wall_2.png");
+    background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -45,7 +44,7 @@ ul, ol, dl, figure,
  */
 img {
     max-width: 100%;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 
@@ -157,12 +156,11 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    max-width: -webkit-calc(#{$content-width} + (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} + (#{$spacing-unit} * 2));
+    margin: 0 auto;
+    padding: 0 $spacing-unit 0 $spacing-unit;
+    
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -203,5 +201,25 @@ pre {
         path {
             fill: $grey-color;
         }
+    }
+}
+
+
+/**
+ * Button
+ */
+
+button {
+    width: 150px;
+    height: 44px;
+    border: 1px solid $brand-color;
+    border-radius: 0.2em;
+    background-color: $brand-color;
+    color: #fff;
+
+    &:hover {
+        background-color: darken($brand-color, 15%);
+        border-color: darken($brand-color, 15%);
+        border-style: inset;
     }
 }

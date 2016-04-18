@@ -6,32 +6,43 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+
+//Lato: 900 400, 300italic;
+$base-font-family: "Lato", sans-serif;
+$base-font-size: 16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size: 10px;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 5%;
 
-$text-color:       #111;
-$background-color: #d5d5d5;
-$brand-color:      #2a7ae2;
+//charcol
+$text-color: #4A4A4A;
+//light grey
+$background-color: #EDECEC;
+//golden orange
+$brand-color: #F5A623;
+//teal
+$brand-color-teal: #50E3DA;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color: #4A4A4A;
+$grey-color-light: #d5d5d5;
+$grey-color-dark: #939294;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    950px;
 
+//media size
+$on-small:         400px;
+$on-medium:        550px;
+$on-large:         950px;
+
+//remove?
 $on-palm:          600px;
-$on-laptop:        800px;
-
-
+$on-laptop:        950px;
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-query($on-small) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;

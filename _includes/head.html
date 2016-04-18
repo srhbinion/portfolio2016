@@ -1,12 +1,47 @@
 <head>
+  <!--Meta-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!--Description-->
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
+  <!--CSS-->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!--Google Font: Lato 400,900,300italic-->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,300italic' rel='stylesheet' type='text/css'>
+  <!--URL clean up-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!--RSS-->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <!-- Javascript -->
+  <script src="{{ "/js/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- typed -->
+  <script src="{{ "/js/typed.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <!-- typed function-->
+  <script>
+    $(function(){
+        $(".element").typed({
+          strings: ["front-end developer.", "designer.", "movie nerd.", "question asker.", "commander of robots.", "ui developer.", "biker.", "straight shooter.","gamer (pro-tip: cake is most-likely a lie)."],
+          // typing speed
+          typeSpeed: 100,
+          // time before typing starts
+          startDelay: 25,
+          // backspacing speed
+          backSpeed: 5,
+          // shuffle the strings
+          shuffle: false,
+          // time before backspacing
+          backDelay: 1500,
+          // loop
+          loop: true,
+          // false = infinite
+          loopCount: false,
+          // show cursor
+          showCursor: false,
+        });
+    });
+  </script>
 </head>

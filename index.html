@@ -4,22 +4,30 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <ul class="content">
+    <li>
+      {% for post in site.posts limit:3 %}
 
-  <div class="green"></div>
+          <section class="sample-post">
+            
+            <ul class="sample-text">
+              <li><h4>{{post.title}}</h4></li>
+              <li><p>{{post.description}}</p></li>
+              <li>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                  <button>VIEW PROJECT</button>
+                </a>
+              </li>
+            </ul>
+            
+            <ul>
+              <li><img src="{{ post.img }}" alt="{{post.img-alt}}"></li>
+            </ul>  
+          
+          </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+      {% endfor %}
+    </li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
