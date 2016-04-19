@@ -8,13 +8,15 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling 
  */
+html {
+    font-size: $base-font-size;
+}
+
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight $base-font-size $base-font-family;
     color: $text-color;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -166,7 +168,7 @@ pre {
 
 /**
  * Wrapper
- */
+
 .wrapper {
     max-width: -webkit-calc(#{$content-width} + (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} + (#{$spacing-unit} * 2));
@@ -174,19 +176,22 @@ pre {
     
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-large) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
 }
+*/
 
 
 
 /**
  * Clearfix
- */
+*/
+
+
 %clearfix {
 
     &:after {

@@ -1,6 +1,5 @@
-/**
- * Site header
- */
+/* Site header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .site-header {
     min-height: 100px;
     padding: 0 $spacing-unit;
@@ -115,9 +114,8 @@
 
 }
 
-/**
- * Page content
- */
+/* Page content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-content {
     padding: 0 $spacing-unit $spacing-unit $spacing-unit;
     border-bottom: 1px solid $grey-color-light;
@@ -146,9 +144,8 @@
     font-size: 24px;
 }
 
-/**
- * work-samples
- */
+/* work-samples
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .content {
     margin: auto 0;
@@ -186,9 +183,8 @@
     width: 60%;
 }
 
-/**
- * Site footer
- */
+/* Site footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .site-footer {
     background-color: $grey-color-light;
     border-top: 1px solid $grey-color-light;
@@ -247,4 +243,133 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
+}
+
+/* Grid (modified from Skeleton)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+
+  @extend %clearfix;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* Clearfix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* For devices larger than 550px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 550px) {
+  .container {
+    width: 95%;
+    background-color: red; }
+  
+  .column,
+  .columns {
+    margin-left: $gutter-unit; }
+  
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+
+  .one.column,
+  .one.columns                    { width: $spacing-unit; }
+
+  .two.columns                    { width: (($spacing-unit * 2)+($gutter-unit * 1)); }
+
+  .three.columns                  { width: (($spacing-unit * 3)+($gutter-unit * 2)); }
+
+  .four.columns                   { width: (($spacing-unit * 4)+($gutter-unit * 3)); }
+
+  .five.columns                   { width: (($spacing-unit * 5)+($gutter-unit * 4)); }
+
+  .six.columns                    { width: (($spacing-unit * 6)+($gutter-unit * 5)); }
+
+  .seven.columns                  { width: (($spacing-unit * 7)+($gutter-unit * 6)); }
+
+  .eight.columns                  { width: (($spacing-unit * 8)+($gutter-unit * 9)); }
+
+  .nine.columns                   { width: (($spacing-unit * 9)+($gutter-unit * 10)); }
+
+  .ten.columns                    { width: (($spacing-unit * 10)+($gutter-unit * 11)); }
+
+  .eleven.columns                 { width: (($spacing-unit * 11)+($gutter-unit * 12)); }
+
+  .twelve.columns                 { width: (($spacing-unit * 12)+($gutter-unit * 13)); margin-left: 0; }
+
+  /* Common Fractions
+  –––––––––––––––––––– */
+
+  .one-third.column               { width: (($spacing-unit * 4)+($gutter-unit * 3)); }
+
+  .two-thirds.column              { width: (($spacing-unit * 8)+($gutter-unit * 9)); }
+
+  .one-half.column                { width: (($spacing-unit * 6)+($gutter-unit * 5)); }
+
+  /* Offsets
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .offset-by-one.column,
+  .offset-by-one.columns          { width: (($spacing-unit * 1)+($gutter-unit * 1)); }
+
+  .offset-by-two.column,
+  .offset-by-two.columns          { width: (($spacing-unit * 2)+($gutter-unit * 2)); }
+
+  .offset-by-three.column,
+  .offset-by-three.columns        { width: (($spacing-unit * 3)+($gutter-unit * 3)); }
+
+  .offset-by-four.column,
+  .offset-by-four.columns         { width: (($spacing-unit * 4)+($gutter-unit * 4)); }
+
+  .offset-by-five.column,
+  .offset-by-five.columns         { width: (($spacing-unit * 5)+($gutter-unit * 5)); }
+
+  .offset-by-six.column,
+  .offset-by-six.columns          { width: (($spacing-unit * 6)+($gutter-unit * 6)); }
+
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { width: (($spacing-unit * 7)+($gutter-unit * 7)); }
+
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { width: (($spacing-unit * 8)+($gutter-unit * 8)); }
+
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { width: (($spacing-unit * 9)+($gutter-unit * 9)); }
+
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { width: (($spacing-unit * 10)+($gutter-unit * 10)); }
+
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { width: (($spacing-unit * 11)+($gutter-unit * 11)); }
+
+  /* Common Fractions
+  –––––––––––––––––––– */
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { width: (($spacing-unit * 4)+($gutter-unit * 4)); }
+
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { width: (($spacing-unit * 8)+($gutter-unit * 9)); }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { width: (($spacing-unit * 6)+($gutter-unit * 6)); }
+
 }

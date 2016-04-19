@@ -4,19 +4,19 @@
 @charset "utf-8";
 
 
-
 // Our variables
 
 //Lato: 900, 400, 300italic;
 $base-font-family: "Lato", sans-serif;
-$base-font-size: 16px;
+$base-font-size: 1.2em;
 $base-font-weight: 400;
 $bold-font-weight: 900;
 $italic-font-weight: 300;
-$small-font-size: 10px;
-$base-line-height: 1.5;
+$small-font-size: 1em;
+$base-line-height: 1.6;
 
-$spacing-unit: 5%;
+$spacing-unit: 4.66666666667%;
+$gutter-unit: 4.0%;
 
 //charcol
 $text-color: #4A4A4A;
@@ -32,16 +32,13 @@ $grey-color-light: #d5d5d5;
 $grey-color-dark: #939294;
 
 // Width of the content area
-$content-width:    950px;
+$content-width:    960px;
 
 //media size
 $on-small:         400px;
 $on-medium:        550px;
-$on-large:         950px;
+$on-large:         960px;
 
-//remove?
-$on-palm:          600px;
-$on-laptop:        950px;
 
 // Use media queries like this:
 // @include media-query($on-small) {
@@ -55,8 +52,6 @@ $on-laptop:        950px;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
