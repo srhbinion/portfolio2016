@@ -8,12 +8,13 @@
 
 //Lato: 900, 400, 300italic;
 $base-font-family: "Lato", sans-serif;
-$base-font-size: 1.2em;
+$base-font-size: 14pt; 
 $base-font-weight: 400;
+$base-line-height: 1.2857; /* 18px / 14px = 1.2857 */
+
+$small-font-size: 12pt;
 $bold-font-weight: 900;
 $italic-font-weight: 300;
-$small-font-size: 1em;
-$base-line-height: 1.6;
 
 $spacing-unit: 4.66666666667%;
 $gutter-unit: 4.0%;

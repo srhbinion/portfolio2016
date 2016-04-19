@@ -1,27 +1,27 @@
 /* Site header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .site-header {
-    min-height: 100px;
-    padding: 0 $spacing-unit;
+  min-height: 100px;
+  padding: 0 $spacing-unit;
 
     
-    // Positioning context for the mobile navigation icon
+  // Positioning context for the mobile navigation icon
 }
 
 /* Logo */
 .site-title img {
-    padding: 1% 0;
-    width: 125px;
+  padding: 1% 0;
+  width: 125px;
 }
 
 /* hello text */
 .site-welcome {
-    background-color: $background-color;
-    background-image: url("/assets/concrete/concrete_wall_2.png");
-    height: 400px;
-    margin: -100px 0 0 0;
-    padding-top: 23%;
-    padding-left: 8%;
+  background-color: $background-color;
+  background-image: url("/assets/concrete/concrete_wall_2.png");
+  height: 400px;
+  margin: -100px 0 0 0;
+  padding-top: 23%;
+  padding-left: 8%;
     
     p {
         font-size: 1.45em;
@@ -30,38 +30,38 @@
 }
 
 .site-nav {
-    float: right;
-    margin-right: $spacing-unit;
-    
-    .menu-icon {
-        display: none;
-        padding: 0%;
-        
-    }
+  float: right;
+  background-color: green;
+  margin-bottom: 20px;
+  
+  .menu-icon {
+      display: none;
+      padding: 0%;
+      
+  }
 
-    .page-link {
-        display: inline-block;
-        margin-top: 12%;
-        margin-right: 20px;
-        padding-top: 5%;
-        color: $text-color;
-        line-height: $base-line-height;
+  .page-link {
+      margin-top: 12%;
+      margin-right: 20px;
+      padding-top: 5%;
+      color: $text-color;
+      line-height: $base-line-height;
 
-        &:last-child {
-            border-radius: 2px;
-            background-color: $brand-color-teal;
-            color: #fff;
-            margin: 0px;
-            padding: 10px;
-            
-            &:hover {
-                text-decoration: none;
-                background-color: darken($brand-color-teal, 25%);
-            }
-            
-        }
+      &:last-child {
+          border-radius: 2px;
+          background-color: $brand-color-teal;
+          color: #fff;
+          margin: 0px;
+          padding: 10px;
+          
+          &:hover {
+              text-decoration: none;
+              background-color: darken($brand-color-teal, 25%);
+          }
+          
+      }
 
-    }
+  }
 
     @include media-query($on-small) {
         position: absolute;
