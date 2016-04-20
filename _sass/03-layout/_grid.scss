@@ -1,210 +1,5 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-
-}
-
-/**
- * Basic styling 
- */
-html {
-    font-size: $small-font-size;
-}
-
-body {
-    font: $base-font-weight $base-font-size $base-font-family;
-    color: $text-color;
-    background-color: #fff;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: bottom;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-family: $base-font-family;
-    font-size:$base-font-size;
-    font-weight:$base-font-weight;
-}
-
-h1 {
-    font-family: "$bold-font-family", sans-serif;
-    font-size: 2.625em;
-    font-weight: 900;
-}
-
-h2 {
-    font-size: 2.75em;
-}
-
-h4 {
-    font-size: 1em;
-    font-weight: 900;
-    color:$brand-color;
-}
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}
-
-
-/**
- * Button
- */
-
-button {
-    width: 150px;
-    height: 44px;
-    border: 1px solid $brand-color;
-    border-radius: 0.2em;
-    background-color: $brand-color;
-    color: #fff;
-
-    &:hover {
-        background-color: darken($brand-color, 15%);
-        border-color: darken($brand-color, 15%);
-        border-style: inset;
-    }
-}
-
 /* Grid (modified from Skeleton)
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+----------------*/
 .container {
   position: relative;
   width: 100%;
@@ -213,7 +8,6 @@ button {
   padding: 0 20px;
   box-sizing: border-box;
 
-  @extend %clearfix;
 }
 
 .column,
@@ -222,19 +16,10 @@ button {
   float: left;
   box-sizing: border-box; }
 
-/* Clearfix
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-%clearfix {
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 
 /* For devices larger than 550px
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+----------------*/
 @media (min-width: 550px) {
   .container {
     width: 95%; }
@@ -274,7 +59,7 @@ button {
   .twelve.columns                 { width: (($spacing-unit * 12)+($gutter-unit * 13)); margin-left: 0; }
 
   /* Common Fractions
-  –––––––––––––––––––– */
+----------------*/
 
   .one-third.column               { width: (($spacing-unit * 4)+($gutter-unit * 3)); }
 
@@ -283,7 +68,7 @@ button {
   .one-half.column                { width: (($spacing-unit * 6)+($gutter-unit * 5)); }
 
   /* Offsets
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+----------------*/
   .offset-by-one.column,
   .offset-by-one.columns          { width: (($spacing-unit * 1)+($gutter-unit * 1)); }
 
@@ -318,7 +103,7 @@ button {
   .offset-by-eleven.columns       { width: (($spacing-unit * 11)+($gutter-unit * 11)); }
 
   /* Common Fractions
-  –––––––––––––––––––– */
+----------------*/
 
   .offset-by-one-third.column,
   .offset-by-one-third.columns    { width: (($spacing-unit * 4)+($gutter-unit * 4)); }
@@ -333,6 +118,7 @@ button {
 
 /**
  * Wrapper
+
 
 .wrapper {
     max-width: -webkit-calc(#{$content-width} + (#{$spacing-unit} * 2));
