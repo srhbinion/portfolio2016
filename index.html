@@ -1,10 +1,9 @@
 ---
 layout: default
-image: /assets/concrete/concrete_wall_2.png
+image: http://placehold.it/350x150
 ---
 
 <div class="home">
-
   <div class="container">
     <section class="site-welcome">
       <div class="two column">
@@ -14,32 +13,28 @@ image: /assets/concrete/concrete_wall_2.png
         </br>
       </div>
     </section>
-  </div> 
-
-  <ul class="content">
-    <li>
-      {% for post in site.posts limit:3 %}
-
+  </div>
+  <div class="container">
+    <ul class="content">
+        {% for post in site.posts limit:3 %}
           <section class="sample-post">
-            
-            <ul class="sample-text">
-              <li><h4>{{post.title}}</h4></li>
-              <li><p>{{post.description}}</p></li>
-              <li>
+            <div class="one offset by five">
+              <!--<div class="sample-text">-->
+                <h4>{{post.title}}</h4></li>
+                <p>{{post.description}}</p>
                 <a href="{{ post.url | prepend: site.baseurl }}">
                   <button>VIEW PROJECT</button>
                 </a>
-              </li>
-            </ul>
-            
-            <ul>
-              <li><img src="{{ post.img }}" alt="{{post.img-alt}}"></li>
-            </ul>  
-          
+            </div>
+            <div class="four offset-by-six columns">
+              <img src="{{ post.img }}" alt="{{post.img-alt}}">
+            </div>  
           </section>
-
-      {% endfor %}
-    </li>
-  </ul>
-
+        {% endfor %}
+    </ul>
+  </div>
 </div>
+
+
+
+
