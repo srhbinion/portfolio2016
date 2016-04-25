@@ -49,19 +49,20 @@
         // move image up
     }
 
-    /*ul {
+    ul {
         list-style-type: none;
         float: left;
 
         li {
-            margin: 0;
+            position: relative;
+            margin: $spacing-unit;
 
             &:last-child {
                 position: inherit;
-                top: 50px;
+                top: 150px;
             }
         }
-    }*/
+    }
 
     img {
         position: relative;

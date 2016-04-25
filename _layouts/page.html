@@ -2,15 +2,18 @@
 layout: default
 ---
 
-//about contact page
-
 <article class="post">
 
-  <header class="post-header">
+  <div class="container">
+  	<div class="site-welcome">
+  		{{ page.img }}
+  	</div>
+  </div>
+  <header class="post-header container">
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
-  <div class="post-content">
+  <div class="post-content container">
     {{ content }}
   </div>
 

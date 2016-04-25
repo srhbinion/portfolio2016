@@ -14,9 +14,14 @@ layout: default
   <div class="container">
     {% for post in site.posts limit:3 %}
     <section class="sample-post">
-      <ul class="seven columns" style="background-color:blue; height:100px;">
+      <ul class="seven columns">
         <li><h4>{{post.title}}</h4></li>
         <li><p>{{post.description}}</p></li>
+        <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <button>VIEW PROJECT</button>
+          </a>
+        </li>
       </ul>
       <div>
         <img src="{{ post.img }}" alt="{{post.img-alt}}" class="offset-by-one four columns">
@@ -29,10 +34,7 @@ layout: default
 
 
             <!--<div class="seven columns" style="background-color: green;">
-                <h4>{{post.title}}</h4></li>
-                <p>{{post.description}}</p>
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                  <button>VIEW PROJECT</button>
-                </a>
+    
+
             </div>-->
 
