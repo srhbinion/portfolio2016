@@ -1,10 +1,8 @@
 ---
 layout: default
-image: /assets/concrete/concrete_wall_2.png
 ---
 
 <div class="home">
-
   <div class="container">
     <section class="site-welcome">
       <div class="two column">
@@ -14,32 +12,25 @@ image: /assets/concrete/concrete_wall_2.png
         </br>
       </div>
     </section>
-  </div> 
-
-  <ul class="content">
-    <li>
-      {% for post in site.posts limit:3 %}
-
+  </div>
+  <div class="container">
+    <ul class="content">
+        {% for post in site.posts limit:3 %}
           <section class="sample-post">
-            
-            <ul class="sample-text">
-              <li><h4>{{post.title}}</h4></li>
-              <li><p>{{post.description}}</p></li>
-              <li>
+              <img src="{{ post.img }}" alt="{{post.img-alt}}">
+          </section>
+        {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+            <!--<div class="seven columns" style="background-color: green;">
+                <h4>{{post.title}}</h4></li>
+                <p>{{post.description}}</p>
                 <a href="{{ post.url | prepend: site.baseurl }}">
                   <button>VIEW PROJECT</button>
                 </a>
-              </li>
-            </ul>
-            
-            <ul>
-              <li><img src="{{ post.img }}" alt="{{post.img-alt}}"></li>
-            </ul>  
-          
-          </section>
+            </div>-->
 
-      {% endfor %}
-    </li>
-  </ul>
 
-</div>

@@ -1,0 +1,117 @@
+/*Hero styles
+----------------*/
+
+.site-header {
+  min-height: 100px;
+  padding: 0 $spacing-unit;
+    
+  // Positioning context for the mobile navigation icon
+}
+
+/* Logo */
+.site-title img {
+  margin: $spacing-unit/2 0;
+  width: 125px;
+  height: 100px;
+}
+
+.site-nav {
+  float: right;
+  margin: $spacing-unit/2 0;
+  
+  .menu-icon {
+      display: none;
+      padding: 0%; 
+  }
+
+  .page-link {
+      margin-top: 12%;
+      margin-right: 20px;
+      padding-top: 5%;
+      color: $text-color;
+      line-height: $base-line-height;
+
+      &:last-child {
+          border-radius: 2px;
+          background-color: $brand-color-teal;
+          color: #fff;
+          margin: 0px;
+          padding: 10px;
+          
+          &:hover {
+              text-decoration: none;
+              background-color: darken($brand-color-teal, 25%);
+          }
+      }
+  }
+
+  @include media-query($on-small) {
+      position: absolute;
+      top: 9px;
+      right: $spacing-unit / 2;
+      background-color: $background-color;
+      border: 1px solid $grey-color-light;
+      border-radius: 5px;
+      text-align: left;
+
+      .menu-icon {
+          display: block;
+          float: right;
+          width: 36px;
+          height: 26px;
+          line-height: 0;
+          padding-top: 10px;
+          text-align: center;
+
+          > svg {
+              width: 18px;
+              height: 15px;
+
+              path {
+                  fill: $grey-color-dark;
+              }
+          }
+      }
+
+      .trigger {
+          clear: both;
+          display: none;
+      }
+
+      &:hover .trigger {
+          display: block;
+          padding-bottom: 5px;
+      }
+
+      .page-link {
+          display: block;
+          padding: 5px 10px;
+
+          &:not(:last-child) {
+              margin-right: 0;
+          }
+          margin-left: 20px;
+      }
+  }
+
+}
+
+/* Feature Content
+----------------*/
+.hero-image {
+  background-image: url("/assets/concrete/concrete_wall_2.png");
+  background-color: $background-color;
+  height: 500px;
+  margin: -105px 0 0 0;
+}
+
+// hello text 
+.site-welcome {
+  margin: -400px 0 0 0;
+  height: 355px;
+
+    p {
+        font-size: 1.45em;
+        color: $grey-color-dark;
+    }
+}

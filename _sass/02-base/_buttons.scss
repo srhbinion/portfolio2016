@@ -1,0 +1,18 @@
+/**
+ * Button
+----------------*/
+
+button {
+    width: 150px;
+    height: 44px;
+    border: 1px solid $brand-color;
+    border-radius: 0.2em;
+    background-color: $brand-color;
+    color: #fff;
+
+    &:hover {
+        background-color: darken($brand-color, 15%);
+        border-color: darken($brand-color, 15%);
+        border-style: inset;
+    }
+}

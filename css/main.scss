@@ -3,61 +3,30 @@
 ---
 @charset "utf-8";
 
-// Our variables
+/*00-helper
+-------------*/
+@import "00-helper/01-variables/fonts";
+@import "00-helper/01-variables/colors";
+@import "00-helper/01-variables/sizes";
+@import "00-helper/04-resets/global";
 
-//Lato: 900, 400, 300italic;
-$base-font-family: "Lato", sans-serif;
-$base-font-size: 14pt; 
-$base-font-weight: 400;
-$base-line-height: 1.2857; /* 18px / 14px = 1.2857 */
+/*01-vendor
+-------------*/
 
-$small-font-size: 12pt;
-$bold-font-weight: 900;
-$italic-font-weight: 300;
+/*02-base
+-------------*/
+@import "02-base/headings";
+@import "02-base/buttons";
 
-$spacing-unit: 4.66666666667%;
-$gutter-unit: 4.0%;
+/*03-layout
+-------------*/
+@import "03-layout/grid";
+@import "03-layout/hero-styles";
+@import "03-layout/example-samples";
+@import "03-layout/footer";
 
-//charcole
-$text-color: #4A4A4A;
-//light grey
-$background-color: #EDECEC;
-//golden orange
-$brand-color: #F5A623;
-//teal
-$brand-color-teal: #50E3DA;
+/*04-modules
+-------------*/
 
-$grey-color: #4A4A4A;
-$grey-color-light: #d5d5d5;
-$grey-color-dark: #939294;
-
-//Feature Image
-
-// Width of the content area
-$content-width:    960px;
-
-//media size
-$on-small:         400px;
-$on-medium:        550px;
-$on-large:         960px;
-
-
-// Use media queries like this:
-// @include media-query($on-small) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+/*04-states
+-------------*/
