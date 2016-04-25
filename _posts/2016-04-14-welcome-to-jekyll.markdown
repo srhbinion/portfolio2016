@@ -3,7 +3,7 @@ layout: post
 title:  "Sample One"
 date:   2016-04-14 22:27:07 -0500
 categories: jekyll update
-img: /assets/one.jpg
+img: http://placehold.it/300x300
 img-alt: "img-alt"
 description: "Sample 1 is about walking into a brick tree."
 ---

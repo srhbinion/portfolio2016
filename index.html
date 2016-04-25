@@ -1,6 +1,5 @@
 ---
 layout: default
-image: http://placehold.it/350x150
 ---
 
 <div class="home">
@@ -18,17 +17,7 @@ image: http://placehold.it/350x150
     <ul class="content">
         {% for post in site.posts limit:3 %}
           <section class="sample-post">
-            <div class="one offset by five">
-              <!--<div class="sample-text">-->
-                <h4>{{post.title}}</h4></li>
-                <p>{{post.description}}</p>
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                  <button>VIEW PROJECT</button>
-                </a>
-            </div>
-            <div class="four offset-by-six columns">
               <img src="{{ post.img }}" alt="{{post.img-alt}}">
-            </div>  
           </section>
         {% endfor %}
     </ul>
@@ -36,5 +25,12 @@ image: http://placehold.it/350x150
 </div>
 
 
+            <!--<div class="seven columns" style="background-color: green;">
+                <h4>{{post.title}}</h4></li>
+                <p>{{post.description}}</p>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                  <button>VIEW PROJECT</button>
+                </a>
+            </div>-->
 
 
