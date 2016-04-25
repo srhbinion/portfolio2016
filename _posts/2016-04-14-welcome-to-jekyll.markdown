@@ -3,9 +3,13 @@ layout: post
 title:  "Sample One"
 date:   2016-04-14 22:27:07 -0500
 categories: jekyll update
-img: http://placehold.it/300x300
-img-alt: "img-alt"
-description: "Sample 1 is about walking into a brick tree."
+
+thumb-img: http://placehold.it/300x300
+thumb-img-alt: "img-alt"
+thumb-description: "Sample 1 is about walking into a brick tree."
+
+img: http://placehold.it/900x300
+img-alt: shoes
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

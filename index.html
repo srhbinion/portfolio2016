@@ -16,7 +16,7 @@ layout: default
     <section class="sample-post">
       <ul class="seven columns">
         <li><h4>{{post.title}}</h4></li>
-        <li><p>{{post.description}}</p></li>
+        <li><p>{{post.thumb-description}}</p></li>
         <li>
           <a href="{{ post.url | prepend: site.baseurl }}">
             <button>VIEW PROJECT</button>
@@ -24,7 +24,7 @@ layout: default
         </li>
       </ul>
       <div>
-        <img src="{{ post.img }}" alt="{{post.img-alt}}" class="offset-by-one four columns">
+        <img src="{{ post.thumb-img }}" alt="{{post.thumb-img-alt}}" class="offset-by-one four columns">
       </div>
     </section>
     {% endfor %} 

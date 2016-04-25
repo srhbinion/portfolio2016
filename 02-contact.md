@@ -2,6 +2,8 @@
 layout: page
 title: Contact
 permalink: /contact/
+img: http://placehold.it/900x300
+img-alt: shoes
 ---
 
 
