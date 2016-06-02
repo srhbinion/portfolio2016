@@ -1,137 +1,45 @@
-/* Grid (modified from Skeleton)
-----------------*/
-.container {
-  position: relative;
-  width: 100%;
+/* ---------------------------------------------------------------------
+Grid
+--------------------------------------------------------------------- */
+.row {
+  //@import clearfix
+  &:before, &:after {
+    display: table;
+    content: " "; 
+  }
+  
+  &:after {
+      clear: both;
+  }
+
   max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 12 column */
 .column,
 .columns {
-  width: 100%;
-  float: left;
-}
-
-.column:first-child,
-.columns:first-child {
-  margin-left: 0; 
+    width: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    //$gutter-width: 20px;
 }
 
 /* For devices larger than 550px
 ----------------*/
 @media (min-width: 550px) {
-  .container {
-   }
-  
-  .column,
-  .columns {
-    
-  }
-
-  .one.column,
-  .one.columns                    { width: $spacing-unit; }
-
-  .two.columns                    { width: (($spacing-unit * 2)+($gutter-unit * 1)); }
-
-  .three.columns                  { width: (($spacing-unit * 3)+($gutter-unit * 2)); }
-
-  .four.columns                   { width: (($spacing-unit * 4)+($gutter-unit * 3)); }
-
-  .five.columns                   { width: (($spacing-unit * 5)+($gutter-unit * 4)); }
-
-  .six.columns                    { width: (($spacing-unit * 6)+($gutter-unit * 5)); }
-
-  .seven.columns                  { width: (($spacing-unit * 7)+($gutter-unit * 6)); }
-
-  .eight.columns                  { width: (($spacing-unit * 8)+($gutter-unit * 9)); }
-
-  .nine.columns                   { width: (($spacing-unit * 9)+($gutter-unit * 10)); }
-
-  .ten.columns                    { width: (($spacing-unit * 10)+($gutter-unit * 11)); }
-
-  .eleven.columns                 { width: (($spacing-unit * 11)+($gutter-unit * 12)); }
-
-  .twelve.columns                 { width: (($spacing-unit * 12)+($gutter-unit * 13)); margin-left: 0; }
-
-  /* Common Fractions
-----------------*/
-
-  .one-third.column               { width: (($spacing-unit * 4)+($gutter-unit * 3)); }
-
-  .two-thirds.column              { width: (($spacing-unit * 8)+($gutter-unit * 9)); }
-
-  .one-half.column                { width: (($spacing-unit * 6)+($gutter-unit * 5)); }
-
-  /* Offsets
-----------------*/
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: (($spacing-unit * 1)+($gutter-unit * 1)); }
-
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: (($spacing-unit * 2)+($gutter-unit * 2)); }
-
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: (($spacing-unit * 3)+($gutter-unit * 3)); }
-
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: (($spacing-unit * 4)+($gutter-unit * 4)); }
-
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: (($spacing-unit * 5)+($gutter-unit * 5)); }
-
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: (($spacing-unit * 6)+($gutter-unit * 6)); }
-
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: (($spacing-unit * 7)+($gutter-unit * 7)); }
-
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: (($spacing-unit * 8)+($gutter-unit * 8)); }
-
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: (($spacing-unit * 9)+($gutter-unit * 9)); }
-
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: (($spacing-unit * 10)+($gutter-unit * 10)); }
-
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: (($spacing-unit * 11)+($gutter-unit * 11)); }
-
-  /* Common Fractions
-----------------*/
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { width: (($spacing-unit * 4)+($gutter-unit * 4)); }
-
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { width: (($spacing-unit * 8)+($gutter-unit * 9)); }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { width: (($spacing-unit * 6)+($gutter-unit * 6)); }
-
+  .one    { width: 10% ;}
+  .two    { width: 20%;}
+  .three  { width: 30%;}
+  .four   { width: 40%;}
+  .five   { width: 50%;}
+  .six    { width: 60%;}
+  .seven  { width: 70%;}
+  .eight  { width: 80% ;}
+  .nine   { width: 90%;}
+  .ten    { width: 100%;}
 }
-
-/**
- * Wrapper
-
-
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} + (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} + (#{$spacing-unit} * 2));
-    padding: 0 5%;
-    
-    @extend %clearfix;
-
-    @include media-query($on-large) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-*/
-
-
