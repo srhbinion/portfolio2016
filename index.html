@@ -3,15 +3,17 @@ layout: default
 ---
 
 <div class="home">
-  <div class="container">
-    <section class="offset-by-one ten columns site-welcome">
+
+  <div class="row">
+    <section class="site-welcome">
       </br>
       <h1>Hello, I am Sarah Binion.</h1>
       <p>I am a... <span class="element"></span></p>
       </br>
     </section>
   </div>
-  <div class="container">
+  
+  <div class="row">
     {% for post in site.posts limit:3 %}
     <section class="sample-post">
       <ul class="seven columns">
@@ -28,13 +30,6 @@ layout: default
       </div>
     </section>
     {% endfor %} 
-    </ul>
   </div>
+  
 </div>
-
-
-            <!--<div class="seven columns" style="background-color: green;">
-    
-
-            </div>-->
-
