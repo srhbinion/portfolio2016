@@ -10,9 +10,8 @@
 
 /* Logo */
 .site-title img {
-  margin: $spacing-unit/2 0;
-  width: 125px;
-  height: 100px;
+  max-width: 130px;
+  background-color: purple;
 }
 
 .site-nav {
@@ -101,14 +100,17 @@
 .hero-image {
   background-image: url("/assets/concrete/concrete_wall_2.png");
   background-color: $background-color;
+  
+  border: 2px solid yellow;
   height: 500px;
-  margin: -105px 0 0 0;
+  overflow: auto;
+  //margin: 0 0 0 0;
 }
 
 // hello text 
 .site-welcome {
-  margin: -400px 0 0 0;
-  height: 355px;
+  margin: -400px 4% 0 4%;
+  overflow: auto;
 
     p {
         font-size: 1.45em;
