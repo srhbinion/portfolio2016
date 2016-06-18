@@ -4,7 +4,8 @@ title:  "Sample Three"
 date:   2016-04-14 22:27:07 -0500
 categories: jekyll update
 
-thumb-img-alt: "img-alt"
+thumb-img: http://placehold.it/300x300
+thumb-img-alt: "description of img"
 thumb-description: "Sample 3 is about walking into a green tree with a pink garden."
 
 ---

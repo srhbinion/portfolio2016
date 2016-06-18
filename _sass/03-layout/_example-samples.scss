@@ -1,30 +1,13 @@
 /* Page content
 ----------------*/
 .page-content {
-    border-bottom: 1px solid $grey-color-light;
+    border: 5px solid green;
 }
 
+//TODO: Delete
 .page-heading {
     font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
+    border: 5px solid green;
 }
 
 /* work-samples
@@ -36,14 +19,16 @@
     width: 100%;
     height: 100%;
     list-style-type: none;
-    background-color: yellow;
+    //background-color: yellow;
 }
 
-.sample-post {
+//TODO: SMACSS: module-sample-gallery
+//BEM: gallery
+//BREAKDOWN
+.gallery {
     position: relative;
     margin: $spacing-unit 0;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 320px;
+    min-height: 400px;
 
     &:hover {
         // move image up
@@ -72,12 +57,4 @@
         margin: $spacing-unit/2;
         
     }
-}
-
-.sample-text {
-    width: 60%;
-}
-
-.about-title {
-    background-color: #fff;
 }

@@ -2,33 +2,39 @@
 layout: default
 ---
 
-<div class="home">
-
+<div class="home"> <!-- landing-content-->
+  
+  <!---Hero-Content -->
   <div class="row">
     <div class="twleve columns">
-      <section class="hero-image__text" style="background-color:red;">
-        <h1>Hello, I am Sarah Binion.</h1>
-        <p>I am a... <span class="element"></span></p>
+      <section class="hero-image"> <!-- hero-content-->
+        <h1>Hello, I am Sarah Binion.</h1> <!-- hero-content__title-->
+        <h2>I am a... <span class="element"></span></h2> <!-- hero-content__sub-title-->
       </section>
     </div>
   </div>
+  
+  <!---Sample-Gallery -->
   <div class="row">
+    
     {% for post in site.posts limit:3 %}
-    <section class="sample-post">
-      <ul class="seven columns">
-        <li><h4>{{post.title}}</h4></li>
-        <li><p>{{post.thumb-description}}</p></li>
-        <li>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <button>VIEW PROJECT</button>
-          </a>
-        </li>
-      </ul>
-      <div>
-        <img src="{{ post.thumb-img }}" alt="{{post.thumb-img-alt}}" class="offset-by-one four columns">
-      </div>
-    </section>
-    {% endfor %} 
+      <section class="gallery">
+        <div class="six columns">
+          <ul >
+            <li><h3 class="gallery__title">{{post.title}}</h3></li>
+            <li><h4 class="gallery__sub-title">{{post.thumb-description}}</h4></li>
+            <li><p class=gallery__text></p></li>
+            <li>
+              <a class="button" href="{{post.url | prepend: site.baseurl}}" role="button">VIEW PROJECT</a> <!-- gallery__button -->
+            </li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <img class="gallery__image" src="{{post.thumb-img}}" alt="{{post.thumb-img-alt}}">
+        </div>  
+        </section>
+      {% endfor %}
+    </div>
   </div>
 
 </div>

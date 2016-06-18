@@ -5,14 +5,13 @@
 button {
     width: 150px;
     height: 44px;
-    border: 1px solid $brand-color;
+    border: 1px solid $highlight-color;
     border-radius: 0.2em;
-    background-color: $brand-color;
+    background-color: $highlight-color;
     color: #fff;
 
     &:hover {
-        background-color: darken($brand-color, 15%);
-        border-color: darken($brand-color, 15%);
-        border-style: inset;
+        background-color: $highlight-color-dark;
+        border-color: $highlight-color-dark;
     }
 }
