@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Sample One"
+title:  "green"
 date:   2016-04-14 22:27:07 -0500
 categories: jekyll update
 
-thumb-img: http://placehold.it/300x300
+thumb-img: "/assets/gal-355x200.png"
 thumb-img-alt: "img-alt"
 thumb-description: "Sample 1 is about walking into a brick tree."
 

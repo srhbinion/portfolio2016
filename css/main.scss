@@ -21,12 +21,12 @@
 /*03-layout
 -------------*/
 @import "03-layout/grid";
-@import "03-layout/hero-styles";
-@import "03-layout/example-samples";
-@import "03-layout/footer";
 
 /*04-modules
 -------------*/
+@import "04-modules/hero-content";
+@import "04-modules/footer";
+@import "04-modules/gallery-samples";
 
 /*04-states
 -------------*/
