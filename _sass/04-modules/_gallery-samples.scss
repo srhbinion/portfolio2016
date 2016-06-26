@@ -1,54 +1,30 @@
-/* Page content
-----------------*/
-.page-content {
-    border: 5px solid red;
-}
-
 /* work-samples
 ----------------*/
-
-.content {
-    position: relative;
-    margin: auto 0;
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-    //background-color: yellow;
-}
 
 //TODO: SMACSS: module-sample-gallery
 //BEM: gallery
 //BREAKDOWN
 .gallery {
     position: relative;
-    margin: $spacing-unit 0;
+    //margin: $spacing-unit 0;
     min-height: 400px;
-
+    
     &:hover {
         // move image up
     }
+}
 
-    ul {
-        list-style-type: none;
-        float: left;
+.gallery__item {
+    position: relative;
+    list-style-type: none;
+    margin: $spacing-unit/2;
+    padding: $spacing-unit/2;
+}
 
-        li {
-            position: relative;
-            margin: $spacing-unit;
-
-            &:last-child {
-                position: inherit;
-                top: 150px;
-            }
-        }
-    }
-
-    img {
-        position: relative;
-        right: 0px;
-        bottom: 0px;
-        border: 2px black solid;
-        margin: $spacing-unit/2;
-        
-    }
+.gallery__item-image{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    border: 2px black solid;
+    margin: $spacing-unit/2;
 }

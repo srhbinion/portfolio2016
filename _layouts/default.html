@@ -2,20 +2,15 @@
 <html>
   <!--head-->
   {% include head.html %}
-  <body>
+  
   <!--header-->
-    {% include header.html %}
-    <div class="hero-image">
-      {{image}}
-    </div>
-    <!--gallery-samples-->
-    <div class="page-content">
-      <div>
-        {{ content }}
-      </div>
-    </div>
-    <!--footer-->
-    {% include footer.html %}
+  {% include header.html %}
+  
+  <!--gallery-samples-->
+  <body class="gallery-content">
+      {{ content }}
   </body>
-
+  
+  <!--footer-->
+  {% include footer.html %}
 </html>

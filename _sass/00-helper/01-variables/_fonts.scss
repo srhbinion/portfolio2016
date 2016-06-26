@@ -1,11 +1,12 @@
 /*Fonts
 ----------------*/
-//Lato: 900, 400, 300italic;
+//$base-font-family: "Nunito";
 $base-font-family: "Lato", sans-serif;
-$base-font-size: 14pt; 
 $base-font-weight: 400;
-$base-line-height: 1.2857; /* 18px / 14px = 1.2857 */
+
+$base-font-size: 14pt; 
+
+$base-line-height: 1.2857; 
+/* 18px / 14px = 1.2857 */
 
 $small-font-size: 12pt;
-//$bold-font-weight: 900;
-//$italic-font-weight: 300;

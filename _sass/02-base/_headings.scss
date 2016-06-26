@@ -2,7 +2,13 @@
  * Headings
 -------------*/
 
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+p {
     font-family: $base-font-family;
     font-size: $base-font-size;
     font-weight: $base-font-weight;
@@ -10,27 +16,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: "$bold-font-family", sans-serif;
-    font-size: 2.625em;
+    font-size: 3.142em;
+    /* 44px / 14px = 3.142 */
     font-weight: 900;
 }
 
 h2 {
-    font-size: 2.75em;
+    font-size: 1.714em;
+    /* 24px / 14px = 1.714 */
+    font-weight: 900;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.285em;
+    /* 18px / 14px = 1.285 */
     font-weight: 900;
-    color:$brand-color;
 }
 
 h4 {
-    font-size: 1em;
-    font-weight: 900;
-    color:$brand-color;
+    font-size: 0.8571em;
+    /* 12px / 14px = 0.8571 */
+    font-weight: 100;
+    color:#8B8A8B;
 }
 
 p {
     font-size: 1em;
+    /* 18px / 14px = 1.2857 */
 }

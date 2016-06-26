@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Orange"
-date:   2016-04-14 22:27:07 -0500
+date: 2016-04-14 22:27:07 -0500
 categories: jekyll update
 
 thumb-img: "/assets/gal-355x200.png"
 thumb-img-alt: "img-alt"
-thumb-description: "Orange more into a show shop."
+title: "Orange"
+sub-title: "UI Development | HTML/CSS/JQUERY"
+thumb-description: "Take you music anywhere. Stream and store your music in your browser."
 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
