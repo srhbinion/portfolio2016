@@ -21,13 +21,15 @@
 /*03-layout
 -------------*/
 @import "03-layout/grid";
-@import "03-layout/l-page-sections";
+@import "03-layout/l-gallery-samples";
 
 /*04-modules
 -------------*/
-@import "04-modules/hero-content";
-@import "04-modules/footer";
-@import "04-modules/gallery-samples";
+@import "04-modules/footer-section";
+@import "04-modules/header-section";
+@import "04-modules/hero-section";
+@import "04-modules/navigation-bar";
+@import "04-modules/contact-more-section";
 
 /*04-states
 -------------*/

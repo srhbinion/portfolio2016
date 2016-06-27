@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------------------
 Grid
 --------------------------------------------------------------------- */
+
 .row {
   //@import clearfix
   &:before, &:after {
@@ -23,11 +24,11 @@ Grid
     float: left;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #fff;
 }
 
 /* For devices larger than 550px
 ----------------*/
+
 @media (min-width: 550px) {
   .one      { width: 8.333%;}
   .two      { width: 16.667%;}

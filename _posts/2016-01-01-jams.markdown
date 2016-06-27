@@ -1,0 +1,19 @@
+---
+layout: post
+date: 2016-01-01 11:00:00 -0500
+categories: 01 post
+
+thumb-img: "/assets/thumb/BlocJamsTb.png"
+thumb-img-alt: "bloc jams"
+title: "Bloc Jams"
+sub-title: "UI Development | HTML/CSS/JQUERY"
+thumb-description: "Take you music anywhere. Site created with JavaScript HTML5 Audio library facilitates and custom css."
+
+---
+
+Bloc Jams is a website I created during my bloc.io boot camp using JQuery and JavaScript. Additionally, this site utilizes bootstrap to maintain the grid system and JavaScript HTML5 Audio library facilitates the use of the best audio on any device and on any browser.
+
+Debugging
+---
+While working on the code for this site, I utilized and learned the value of debugging with chrome “inspect element” and the “console” in developer tools.
+---

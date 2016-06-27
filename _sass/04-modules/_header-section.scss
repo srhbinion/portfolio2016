@@ -1,0 +1,18 @@
+/* ---------------------------------------------------------------------
+Header
+--------------------------------------------------------------------- */
+
+.site-header {
+  position: fixed;
+  width: 91%;
+  min-height: 75px;
+  padding: 0 $spacing-unit;
+  background-color: #fff;
+  overflow: auto;    
+  // Positioning context for the mobile navigation icon
+}
+
+/* Logo */
+.site-title img {
+  max-width: 130px;
+}

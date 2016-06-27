@@ -1,19 +1,8 @@
-/*Hero styles
-----------------*/
+/* ---------------------------------------------------------------------
+Navigation
+--------------------------------------------------------------------- */
 
-.site-header {
-  min-height: 100px;
-  padding: 0 $spacing-unit;
-    
-  // Positioning context for the mobile navigation icon
-}
-
-/* Logo */
-.site-title img {
-  max-width: 130px;
-  background-color: purple;
-}
-
+/* Pages */
 .site-nav {
   float: right;
   margin: $spacing-unit/2 0;
@@ -32,14 +21,14 @@
 
       &:last-child {
           border-radius: 2px;
-          background-color: $brand-color-teal;
+          background-color: $brand-color;
           color: #fff;
           margin: 0px;
           padding: 10px;
           
           &:hover {
               text-decoration: none;
-              background-color: darken($brand-color-teal, 25%);
+              background-color: $brand-color-dark;
           }
       }
   }
@@ -49,7 +38,7 @@
       top: 9px;
       right: $spacing-unit / 2;
       background-color: $background-color;
-      border: 1px solid $grey-color-light;
+      border: 1px solid $background-color;
       border-radius: 5px;
       text-align: left;
 
@@ -67,7 +56,7 @@
               height: 15px;
 
               path {
-                  fill: $grey-color-dark;
+                  fill: $text-color-light;
               }
           }
       }
@@ -93,27 +82,4 @@
       }
   }
 
-}
-
-/* Feature Content
-----------------*/
-.hero-image {
-  background-image: url("/assets/concrete/concrete_wall_2.png");
-  background-color: $background-color;
-  
-  border: 2px solid yellow;
-  height: 500px;
-  overflow: auto;
-  //margin: 0 0 0 0;
-}
-
-// hello text 
-.hero-image__text{
-  margin: -400px 4% 0 4%;
-  overflow: auto;
-
-    p {
-        font-size: 1.45em;
-        color: $grey-color-dark;
-    }
 }
