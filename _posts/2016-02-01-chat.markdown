@@ -1,0 +1,56 @@
+---
+layout: post
+date: 2016-01-01 10:00:00 -0500
+categories: 02 post
+
+thumb-img: "/assets/thumb/BlocchatTb.png"
+thumb-img-alt: "bloc chat"
+title: "Bloc Chat"
+sub-title: "UI Development & Framework | HTML/CSS/AngularJS/JavaScript/Firebase"
+thumb-description: "Chat anytime. Site created with AngularJS to control the view and Firebase to hold the Real Time Chat data."
+
+---
+Bloc Chat is a site I created during my bloc.io boot camp using AngularJS to control the views and Firebase to hold the Real Time Chat data. Head over to github to see my code.
+
+Sample Code
+---
+
+While writing my code, I learned the importance of informative documentation and prototype naming standards to keep my code succinct.
+
+```
+binChat.controller("LandingController", ["$scope", "$firebaseArray","Room", "Message", function($scope, $firebaseArray, Room, Message) {
+    // "room" array features
+    $scope.chatRooms = {
+        // accesses "room" array
+        room: Room.allRooms,
+        // adds item to the "room" array
+        add: function(room){
+            // adds this info to new "room" item in array
+            $scope.chatRooms.room.$add({
+                name: $scope.newRoomName,
+                type: "Room"
+            });
+            // ng-model hold room name information
+            $scope.newRoomName =[];  
+        },
+        // removes item from "room" array
+        remove: function(room){
+            $scope.chatRooms.room.$remove(room); 
+        },
+        //shows the selected room as current room
+        set: function(room){
+            // toggles between rooms in bodypanel
+            $scope.currentRoom = !$scope.currentRoom;
+            // ability to call selected room name information
+            $scope.current = {
+                name: room.name,
+                roomId: room.$id
+        };
+    }
+};
+```
+
+Early Prototyes
+---
+
+While designing this application, I refactored the visuals with different treatments and styles to practice my CSS.

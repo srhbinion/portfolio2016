@@ -1,0 +1,25 @@
+/* Size
+----------------*/
+// Width of the content area
+$content-width: 960px;
+$spacing-unit: 4.66666666667%;
+$gutter-unit: 4.0%;
+
+
+//media size
+$on-small:         400px;
+$on-medium:        550px;
+$on-large:         960px;
+
+// Use media queries like this:
+// @include media-query($on-small) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}

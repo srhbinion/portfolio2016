@@ -1,0 +1,38 @@
+<div class="row">
+
+    <div class="six columns">
+        <h4 class="footer-title">{{ site.title }}</h4>
+        <!--<p>{{ site.description }}</p>-->
+    </div>
+
+    <div class="six columns">
+        <ul class="social-media">
+            {% if site.twitter_username %}
+                <li class="social-media__list">
+                    {% include icon-twitter.html username=site.twitter_username %}
+                </li>
+            {% endif %}
+            {% if site.code-pen_username %}
+                <li class="social-media__list">
+                    {% include icon-code-pen.html username=site.code-pen_username %}
+                </li>
+            {% endif %}
+            {% if site.github_username %}
+                <li class="social-media__list">
+                    {% include icon-github.html username=site.github_username %}
+                </li>
+            {% endif %}
+            {% if site.dribbble_username %}
+                <li class="social-media__list">
+                    {% include icon-dribbble.html username=site.dribbble_username %}
+                </li>
+            {% endif %}
+            {% if site.linked-in_username %}
+                <li class="social-media__list">
+                    {% include icon-linked-in.html username=site.linked-in_username %}
+                </li>
+            {% endif %}
+        </ul>
+    </div
+
+</div>

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<!-- landing-content-->
+
+<!---Hero-Content -->
+<div class="row">
+  <section class="hero-content">
+    
+    <div class="twleve columns">
+      <h1 class="hero-content__title">Hello, I am Sarah Binion.</h1>
+      <h2 class="hero-content__sub-title">I am a... <span class="element"></span></h2>
+    </div>
+
+  </section>
+</div>
+
+<!---sample-gallery -->
+<div class="row">
+    {% for post in site.posts limit:3 %}
+      <section class="gallery">
+        <div class="one columns">
+        </div>
+        <div class="six columns">
+          <ul class="gallery-item">
+            <li><h3 class="gallery-item__title">{{post.title}}</h3></li>
+            <li><h4 class="gallery-item__sub-title">{{post.sub-title}}</h4></li>
+            <li><p class=gallery-item__text>{{post.thumb-description}}</p></li>
+          </ul>
+            <a class="gallery-item__button" href="{{post.url | prepend: site.baseurl}}" role="button">VIEW PROJECT</a>
+        </div>
+
+        <div class="four columns">
+          <img class="gallery-item__image" src="{{post.thumb-img}}" alt="{{post.thumb-img-alt}}">
+        </div>
+        <div class="one columns">
+        </div>
+      </section>
+    {% endfor %}
+</div>
+
+<!---contact -->
+<!-- <div class="row">
+  <section class="contact-more">
+    
+    <div class="four columns">
+    </div>
+    
+    <div class="four columns">
+      <h3 class="contact-more__title">What to Know More?</h3>
+      <a class="contact-more__button" href="#" role="button">GET IN TOUCH</a>
+    </div>
+
+    <div class="four columns">
+    </div>
+
+  </section>
+</div> -->

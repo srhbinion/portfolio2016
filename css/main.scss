@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/*00-helper
+-------------*/
+@import "00-helper/01-variables/fonts";
+@import "00-helper/01-variables/colors";
+@import "00-helper/01-variables/sizes";
+@import "00-helper/04-resets/global";
+
+/*01-vendor
+-------------*/
+
+/*02-base
+-------------*/
+@import "02-base/headings";
+@import "02-base/buttons";
+
+/*03-layout
+-------------*/
+@import "03-layout/grid";
+@import "03-layout/l-gallery-samples";
+
+/*04-modules
+-------------*/
+@import "04-modules/footer-section";
+@import "04-modules/header-section";
+@import "04-modules/hero-section";
+@import "04-modules/navigation-bar";
+@import "04-modules/contact-more-section";
+
+/*04-states
+-------------*/

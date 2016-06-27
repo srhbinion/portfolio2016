@@ -1,0 +1,45 @@
+/* ---------------------------------------------------------------------
+Grid
+--------------------------------------------------------------------- */
+
+.row {
+  //@import clearfix
+  &:before, &:after {
+    display: table;
+    content: " "; 
+  }
+  
+  &:after {
+      clear: both;
+  }
+  //width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 12 column */
+.column,
+.columns {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* For devices larger than 550px
+----------------*/
+
+@media (min-width: 550px) {
+  .one      { width: 8.333%;}
+  .two      { width: 16.667%;}
+  .three    { width: 25%;}
+  .four     { width: 33.333%;}
+  .five     { width: 41.667%;}
+  .six      { width: 50%;}
+  .seven    { width: 58.333%;}
+  .eight    { width: 66.666%;}
+  .nine     { width: 75%;}
+  .ten      { width: 83.333%;}
+  .eleven   { width: 91.666%;}
+  .twleve   { width: 100%;}
+}
