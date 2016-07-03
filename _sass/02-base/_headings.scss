@@ -1,6 +1,28 @@
 /* ---------------------------------------------------------------------
 Headings
 --------------------------------------------------------------------- */
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 1%;
+    background: #fff;
+    box-shadow: 0px 1px 2px $text-color-light;
+}
+
+body {
+    position: relative;
+    margin: 90px 0 125px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 1%;
+    background: $brand-color-dark;
+    border-top: 1px solid $text-color-light;
+}
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: $base-font-family;
@@ -31,7 +53,6 @@ h4 {
     font-size: 1em;
     /* 12px / 14px = 0.8571 */
     font-weight: 100;
-    color:#8B8A8B;
 }
 
 p {

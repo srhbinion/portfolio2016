@@ -2,16 +2,16 @@
 Hero styles
 --------------------------------------------------------------------- */
 
+/* Landing Hero */
 .hero-content {
   background-image: url("/assets/concrete/concrete_wall_2.png");
   background-color: $background-color;
   overflow: auto;
-  padding: 150px 25px 75px 25px;
+  padding: 75px $spacing-unit 100px $spacing-unit;
+  min-height: 75px;
 }
 
-.about-pic {
-    width: 300px;
-}
-
-.about {
+/* Logo */
+.site-title img {
+  max-width: 130px;
 }
