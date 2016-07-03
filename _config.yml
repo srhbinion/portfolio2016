@@ -6,11 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
+
+# > # this means to ignore newlines until "baseurl:"
 title: Sarah Binion | Designer & UI Developer
-description: > # this means to ignore newlines until "baseurl:"
-  Sarah Binion is a designer and ui developer from Chicago who belives good communication is good design.
+description: |
+  Sarah Binion is a designer and ui developer from Chicago who belives good
+  communication is good design.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://2016.sarahbinion.com" # the base hostname & protocol for your site
+url: "http://sarahbinion.com" # the base hostname & protocol for your site
 twitter_username: srhbinion
 github_username:  srhbinion
 linked-in_username: sarahbinion
