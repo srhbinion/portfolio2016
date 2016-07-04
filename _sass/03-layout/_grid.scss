@@ -4,12 +4,13 @@ Grid
 
 .row {
   //@import clearfix
-  &:before, &:after {
+  &::before, 
+  &::after {
     display: table;
     content: " "; 
   }
   
-  &:after {
+  &::after {
       clear: both;
   }
   //width: 100%;
