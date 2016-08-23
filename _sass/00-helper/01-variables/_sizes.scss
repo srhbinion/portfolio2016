@@ -1,7 +1,10 @@
 /* Size
 ----------------*/
 // Width of the content area
+
+//modify.. don't lock to 960px
 $content-width: 960px;
+
 $spacing-unit: 4.66666666667%;
 $gutter-unit: 4.0%;
 
@@ -18,6 +21,11 @@ $on-large:         960px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+// 
+// Look into a 760width 
+// 
+// 
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;

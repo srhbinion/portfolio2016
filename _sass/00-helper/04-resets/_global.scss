@@ -13,11 +13,7 @@ dl, dd, ol, ul, figure {
 }
 
 html {
-    font-size: 10px;
-}
-
-body {
-    font: $base-font-weight $base-font-size $base-font-family;
+    font: $base-font-size $base-font-family;
     color: $text-color;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -84,11 +80,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: $brand-color-dark;
+        color: $highlight-color-dark;
     }
 
     &:hover {
-        color: $text-color;
+        color: $highlight-color;
         text-decoration: underline;
     }
 }
@@ -107,6 +103,24 @@ blockquote {
 
     > :last-child {
         margin-bottom: 0;
+    }
+}
+
+/**
+ * Icons
+----------------*/
+
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+
+        path {
+            fill: $brand-color;
+        }
     }
 }
 
@@ -134,35 +148,5 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
-    }
-}
-
-/**
- * Icons
-----------------*/
-
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        vertical-align: middle;
-
-        path {
-            fill: $brand-color;
-        }
-    }
-}
-
-/* Clearfix
-----------------*/
-
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }

@@ -1,0 +1,16 @@
+/* ---------------------------------------------------------------------
+Sections
+--------------------------------------------------------------------- */
+
+body {
+    position: relative;
+    margin: 90px 0 125px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: $brand-color-dark;
+    border-top: 1px solid $text-color-light;
+}

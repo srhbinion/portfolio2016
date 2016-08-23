@@ -3,20 +3,14 @@ Grid
 --------------------------------------------------------------------- */
 
 .row {
-  //@import clearfix
-  &::before, 
+  margin: 0 auto;
+  box-sizing: border-box;
+
   &::after {
     display: table;
-    content: " "; 
+    content: " ";
+    clear: both;
   }
-  
-  &::after {
-      clear: both;
-  }
-  //width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* 12 column */
