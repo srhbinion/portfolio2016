@@ -2,84 +2,82 @@
 Navigation
 --------------------------------------------------------------------- */
 
-.site-nav {
-  float: right;
-  margin: 25px 0 20px 0;
-  padding-right: $spacing-unit/2;
-}
-
-.menu-icon {
-  display: none;
-  padding: 0%;
-}
-
-.page-link {
-  margin-top: 12%;
-  margin-right: 20px;
-  padding-top: 5%;
-  color: $text-color;
-  line-height: $base-line-height;
-
-  &:last-child {
-    border-radius: 10px;
-    background-color: $brand-color;
-    padding: 10px;
-    
-    &:hover {
-        text-decoration: none;
-        background-color: $brand-color-dark;
-    }
-  }
-}
-
 /* Pages */
 .site-nav {
-    
+  float: right;
+  margin: 20px 0;
+  
+  .menu-icon {
+    display: none;
+    padding: 0%; 
+  }
+
+  .page-link {
+    margin-top: 12%;
+    margin-right: 20px;
+    padding-top: 5%;
+    color: $text-color;
+    line-height: $base-line-height;
+
+    &:last-child {
+      border-radius: 2px;
+      background-color: $brand-color;
+      color: #fff;
+      margin: 0px;
+      padding: 10px;
+      
+      &:hover {
+        text-decoration: none;
+        background-color: $brand-color-dark;
+      }
+    }
+  }
+
   @include media-query($on-medium) {
     position: absolute;
     right: $spacing-unit;
     background-color: $background-color;
-    border-radius: 10px;
-    text-align: left;
+    box-shadow: 0px 1px 2px $text-color-light;
+    border-radius: 4px;
 
     .menu-icon {
       display: block;
       float: right;
-      width: 25px;
-      height: 30px;
+      width: 36px;
+      height: 26px;
       line-height: 0;
       padding-top: 10px;
-      padding-left: 10px;
       text-align: center;
+      top: 0px;
 
       > svg {
-        width: 20px;
+        width: 18px;
         height: 15px;
 
         path {
           fill: $text-color-light;
         }
       }
+
     }
 
-  .page-link {
-    display: block;
-    padding: 5px 10px;
-
-    &:not(:last-child) {
-      margin-right: 0;
+    .trigger {
+      clear: both;
+      display: none;
     }
-    
-    margin-left: 20px;
-  }
 
-  .trigger {
-    clear: both;
-    display: none;
-  }
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
 
-  &:hover .trigger {
-    display: block;
-    padding-bottom: 5px;
+    .page-link {
+      display: block;
+      padding: 0px 10px 10px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
   }
 }

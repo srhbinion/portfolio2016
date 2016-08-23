@@ -4,14 +4,14 @@ Hero styles
 
 /* Landing Hero */
 .hero-content {
-  background-image: url("/assets/concrete/concrete_wall_2.png");
-  background-color: $background-color;
-  overflow: auto;
-  padding: 75px $spacing-unit 100px $spacing-unit;
-  min-height: 75px;
+    background-image: url("/assets/concrete/concrete_wall_2.png");
+    background-color: $background-color;
+    overflow: auto;
+    padding: 75px $spacing-unit 100px $spacing-unit;
+    min-height: 55px;
 }
 
 /* Logo */
 .site-title img {
-  max-width: 130px;
+    max-width: 130px;
 }
