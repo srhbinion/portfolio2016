@@ -2,10 +2,18 @@
 Footer
 --------------------------------------------------------------------- */
 
+footer {
+    height: 80px;
+}
+
 .footer-title{
     margin-left: 25px;
-    padding-top: 5px;
+    padding-top: 15px;
     color: $brand-color;
+
+    @include media-query($on-medium) {
+        margin-top:-13px;
+    }
 }
 
 .social-media {
@@ -16,7 +24,12 @@ Footer
 .social-media__list {
     list-style: none;
     float: right;
-    margin: 4px 20px;
+    margin: 15px;
+    margin-right: 20px;
+
+    @include media-query($on-medium) {
+        margin: -20px 20px 10px 10px;
+    }
 }
 
 // .footer-col-wrapper {

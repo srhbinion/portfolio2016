@@ -9,6 +9,11 @@ Hero styles
     overflow: auto;
     padding: 75px $spacing-unit 100px $spacing-unit;
     min-height: 55px;
+
+    @include media-query($on-medium) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
 }
 
 /* Logo */
