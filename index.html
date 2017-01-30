@@ -4,35 +4,24 @@ layout: default
 <!-- landing-content-->
 
 <!---Hero-Content -->
-<div class="row">
-  <section class="hero-content">
-    
-    <div class="twleve columns">
-      <h1>Hello, I am Sarah Binion.</h1>
-      <h2>I am a... <span class="element"></span></h2>
-    </div>
-
-  </section>
-</div>
+<section class="hero-content">
+  <h1>Hello, I am Sarah Binion.</h1>
+  <h2>I am a... <span class="element"></span></h2>
+</section>
 
 <!---sample-gallery -->
-<div class="row">
-    {% for post in site.posts limit:3 %}
+<div>
+    {% for post in site.posts limit:3%}
       <section class="gallery">
-      <!--TODO: Offset grid by one column -->
-        <div class="six columns">
           <ul class="gallery-item">
             <li><h3 class="gallery-item__title">{{post.title}}</h3></li>
             <li><h4 class="gallery-item__sub-title">{{post.sub-title}}</h4></li>
             <li><p class=gallery-item__text>{{post.thumb-description}}</p></li>
+            <a class="button" href="{{post.url | prepend: site.baseurl}}" role="button">VIEW PROJECT</a>
           </ul>
-            <a class="gallery-item__button" href="{{post.url | prepend: site.baseurl}}" role="button">VIEW PROJECT</a>
-        </div>
-
-        <div class="four columns">
-          <img class="gallery-item__image" src="{{post.thumb-img}}" alt="{{post.thumb-img-alt}}">
-        </div>
-      <!--TODO: Offset grid by one column -->
+          <div class="gallery-item">
+            <img class="gallery-item__image" src="{{post.thumb-img}}" alt="{{post.thumb-img-alt}}">
+          </div>
       </section>
     {% endfor %}
 </div>
