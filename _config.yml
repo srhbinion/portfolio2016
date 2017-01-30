@@ -10,7 +10,7 @@
 # > # this means to ignore newlines until "baseurl:"
 title: Sarah Binion | Designer & UI Developer
 description: |
-  Sarah Binion is a designer and ui developer from Chicago who belives good
+  Sarah Binion is a designer and ui developer from Chicago who believes good
   communication is good design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sarahbinion.com" # the base hostname & protocol for your site
