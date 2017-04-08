@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Contact
 permalink: /about/
 img: http://placehold.it/1200x300
 ---
@@ -21,4 +21,3 @@ img: http://placehold.it/1200x300
         </div>
     </div>
 </div>
-

@@ -1,23 +1,35 @@
 /* ---------------------------------------------------------------------
 Header
 --------------------------------------------------------------------- */
-
-header {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    min-height: 90px;
-    box-shadow: 0px 1px 2px $text-color-light;
-    background: #fff;
+.header__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin:  0 $spacing-unit;
 }
 
-.site-logo {
-    position: fixed;
-    margin-top: 5px;
-    margin-left: $spacing-unit/2;
-    height: 63px;
+.logo img {
+  margin-top: .75em;
+  max-height: 70px;
 }
 
-@include media-query($on-medium) {
+.header__link {
+  color: $brand-color-dark;
+  &:hover {
+    color: $brand-color-dark;
+  }
+  &:visited {
+    color: $brand-color;
+  }
+}
 
+.text {
+    padding-top: 10%;
+}
+
+@media (max-width: $on-medium) {
+  .trigger {
+    display: none;
+  }
 }

@@ -1,7 +1,6 @@
 /* ---------------------------------------------------------------------
 Hero styles
 --------------------------------------------------------------------- */
-
 /* Landing Hero */
 .hero-content {
     background-image: url("/assets/concrete/concrete_wall_2.png");
@@ -16,7 +15,29 @@ Hero styles
     }
 }
 
-/* Logo */
-.site-title img {
-    max-width: 130px;
+.name--first {
+	font-family: 'Playball', cursive;
+	font-size: 10rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	background-clip: text;
+	transform: rotate(-0.03turn);
+	margin: 0 auto;
+	-webkit-animation: pulse 30s infinite;
+  -moz-animation: pulse 30s infinite;
+  -o-animation: pulse 30s infinite;
+  animation: pulse 30s infinite;
+}
+
+@-webkit-keyframes pulse {
+	//cornflower
+  0% {background-color: #fb2b69;}
+	//baby pink
+  25% {background-color: #F67F33;}
+	//baby magenta
+  50% {background-color: #F59327;}
+	//sky blue
+  75% {background-color: #ff5b37;}
+	// mint green
+  100% {background-color: #fb2b69;}
 }

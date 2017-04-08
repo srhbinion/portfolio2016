@@ -1,10 +1,21 @@
-/* ---------------------------------------------------------------------
+/*---------------------------------------------------------------------
 Sections
---------------------------------------------------------------------- */
+---------------------------------------------------------------------*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: $Rose;
+  box-shadow: 0px 1px 2px $text-color-light;
+  min-height: 90px;
+}
 
 body {
-    position: relative;
-    margin: 90px 0 125px 0;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  padding-top: 10%;
+  display: flex;
+  border: 1px solid red;
 }
 
 footer {
