@@ -3,41 +3,65 @@ Hero styles
 --------------------------------------------------------------------- */
 /* Landing Hero */
 .hero-content {
-    background-image: url("/assets/concrete/concrete_wall_2.png");
-    background-color: $background-color;
-    overflow: auto;
-    padding: 75px $spacing-unit 100px $spacing-unit;
-    min-height: 55px;
+  background-image: url("/assets/concrete/concrete_wall_2.png");
+  background-color: $background-color;
+  overflow: auto;
+  padding: 75px $spacing-unit 100px $spacing-unit;
+  min-height: 55px;
 
-    @include media-query($on-medium) {
-        padding-top: 40px;
-        padding-bottom: 60px;
-    }
+  @include media-query($on-medium) {
+      padding-top: 40px;
+      padding-bottom: 60px;
+  }
 }
 
-.name--first {
-	font-family: 'Playball', cursive;
-	font-size: 10rem;
+.message {
+  margin: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.message__name--first {
+  font-family: 'Playball', cursive;
+  font-size: 10rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	background-clip: text;
-	transform: rotate(-0.03turn);
-	margin: 0 auto;
-	-webkit-animation: pulse 30s infinite;
-  -moz-animation: pulse 30s infinite;
-  -o-animation: pulse 30s infinite;
-  animation: pulse 30s infinite;
+  background-clip: text;
+  transform: rotate(-0.03turn);
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  -webkit-animation: pulse 15s infinite;
+  -moz-animation: pulse 15s infinite;
+  -o-animation: pulse 15s infinite;
+  animation: pulse 15s infinite;
+  
+  @media (max-width: 600px) {
+  .facet_sidebar {
+    . margin: 0 2rem;
+    margin-left: 20%px;
+  }
+}
 }
 
 @-webkit-keyframes pulse {
-	//cornflower
+//cornflower
   0% {background-color: #fb2b69;}
-	//baby pink
+//baby pink
   25% {background-color: #F67F33;}
-	//baby magenta
+//baby magenta
   50% {background-color: #F59327;}
-	//sky blue
+//sky blue
   75% {background-color: #ff5b37;}
-	// mint green
+// mint green
   100% {background-color: #fb2b69;}
+}
+
+.message__text {
+  margin-left: 27%;
+  margin-top: 4.5rem;
+  max-width: 50%;
+  font-size: 2rem;
+  line-height: 2.25;
+  
 }

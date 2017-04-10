@@ -1,27 +1,27 @@
 /*---------------------------------------------------------------------
 Sections
 ---------------------------------------------------------------------*/
-header {
-  position: fixed;
-  width: 100%;
-  top: 0px;
+html {
+  font: $base-font-family;
   background: $Rose;
-  box-shadow: 0px 1px 2px $text-color-light;
-  min-height: 90px;
 }
 
-body {
-  margin-top: 90px;
-  margin-bottom: 80px;
-  padding-top: 10%;
+.page {
   display: flex;
-  border: 1px solid red;
+  flex-flow: column;
+  height: 100vh;
 }
 
-footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background: $brand-color-dark;
-    border-top: 1px solid $text-color-light;
+.page__body {
+  position: relative;
+  flex: 8;
+  border: 2px solid $Gold;
+  background: $Gold url("https://www.toptal.com/designers/subtlepatterns/patterns/p5.png") repeat scroll;
+  margin: 2rem 2rem 0 2rem;
 }
+
+.page__footer {
+  width:100%;
+  flex: 1;
+}
+

@@ -1,15 +1,1 @@
 <!--inside header-->
-<div class="header__content">
-  <div class="logo">
-    <a href="{{ site.baseurl }}/" >
-      <img src="/assets/sig.svg" alt="Sarah Name"/>
-    </a>
-</div>
-  <div class="trigger">
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-        <a class="header__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </div>
-</dvi>
