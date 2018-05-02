@@ -1,27 +1,13 @@
----
-layout: default
----
-<!-- landing-content-->
-
-<!---Hero-Content -->
-<section class="hero-content">
-  <h1>Hello, I am Sarah Binion.</h1>
-  <h2>I am a... <span class="element"></span></h2>
-</section>
-
-<!---sample-gallery -->
-<div>
-    {% for post in site.posts limit:3%}
-      <section class="gallery">
-          <ul class="gallery-item">
-            <li><h3 class="gallery-item__title">{{post.title}}</h3></li>
-            <li><h4 class="gallery-item__sub-title">{{post.sub-title}}</h4></li>
-            <li><p class=gallery-item__text>{{post.thumb-description}}</p></li>
-            <a class="button" href="{{post.url | prepend: site.baseurl}}" role="button">VIEW PROJECT</a>
-          </ul>
-          <div class="gallery-item">
-            <img class="gallery-item__image" src="{{post.thumb-img}}" alt="{{post.thumb-img-alt}}">
-          </div>
-      </section>
-    {% endfor %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic application with Webpack</title>
+    <link rel="stylesheet" type="text/css" href="./src/styles/main.css">
+  </head>
+  <body>
+    <h1>WebPack works !!</h1>
+    <p>Coming Soon</p>
+    <script src="bundle.js"></script>
+  </body>
+</html>
