@@ -1,12 +1,4 @@
-2016 Portfolio  
-========
+//error details
+// $ webpack-dev-server
 
-Created a portfolio on jelyll
-
-Credits
----------
-[Sarah Binion](http://www.sarahbinion.com)
-
-Live Preview
----------
-* [site](http://2016.sarahbinion.com/)
+// http://localhost:8080/webpack-dev-server/
