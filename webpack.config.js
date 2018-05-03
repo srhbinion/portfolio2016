@@ -1,10 +1,13 @@
 //const Webpack = require('webpack');
+// TODO: what is the diff webpack vs webpack-dev-server
 
 module.exports = {
-  entry: './src/scripts/main.js',
+  entry: {
+    jsPage:'./src/scripts/main.js'
+  },
   mode: 'development',
   output: {
-    filename: './bundle.js'
+    filename: './jsbundle.js'
   },
   watch: true
 };
