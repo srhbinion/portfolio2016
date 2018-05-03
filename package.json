@@ -1,0 +1,26 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "design development portfolio to demonstrate code skills for future clients and colaboration",
+  "main": "index.html",
+  "scripts": {
+    "test": "webpack-dev-server"
+  },
+  "dependencies": {
+    // project specific
+  },
+  "devDependencies": {
+    // developer
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srhbinion/portfolio.git"
+  },
+  "author": "Sarah Binion",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/srhbinion/portfolio/issues"
+  },
+  "homepage": "http:www.sarahbinion.com"
+}
