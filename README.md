@@ -1,7 +1,7 @@
 
 ## Hosted
 
-// http: www.sarahbinon.com
+// http://www.sarahbinon.com
 
 ## Local
 
