@@ -7,10 +7,8 @@
     "test": "webpack-dev-server"
   },
   "dependencies": {
-    // project specific
   },
   "devDependencies": {
-    // developer
   },
   "repository": {
     "type": "git",
