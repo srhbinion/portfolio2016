@@ -5,10 +5,10 @@
 
 ## Local
 
-// http://localhost:8080/webpack-dev-server/
+// http://localhost:8080
 
 // Run Local Command
-$ webpack-dev-server
+$ ttp-server -a localhost -p 8000 -c-1
 
 ## Commit Messages
 
