@@ -6,8 +6,19 @@
     <link rel="stylesheet" type="text/css" href="finstyles.css">
   </head>
   <body>
-    <h1>WebPack works !!</h1>
-    <p>Coming Soon</p>
-    <script src="jsbundle.js"></script>
+    <style>
+    html { background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;}
+    p { border-left: 1px solid white; padding-left: 1rem; margin-left: 2rem; margin-top: 1.2rem; line-height: 1.8;}
+    .site { display: flex; justify-content: center; flex-direction: row; align-items: center; padding-top: 20%; }
+    @media (max-width: 400px) { 
+      p { border-left: none; padding-left: 0; margin-left: 0; margin-top: 0; line-height: 1; }
+      .site { flex-direction: column; margin-top: 30%;}
+    }
+    </style>
+    <div class="site">
+      <h1>Sarah Binon</h1>
+      <p>front-end developer</p>
+    </div>
+    <!--<script src="jsbundle.js"></script>-->
   </body>
 </html>

@@ -6,9 +6,9 @@
   "scripts": {
     "test": "webpack-dev-server"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "node-sass": "^4.9.0"
   },
   "repository": {
     "type": "git",
