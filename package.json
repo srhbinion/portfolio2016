@@ -5,11 +5,14 @@
   "main": "index.html",
   "scripts": {
     "clean": "rimraf dist/css/*",
-    "build:compile": "node-sass -w src/styles/main.scss -o dist/css",
-    "build:start": "http-server -a localhost",
-    "dev": "npm-run-all --sequential build:*"
+    "kill": "killall node",
+    "b:compile": "node-sass -w src/styles/main.scss -o dist/css",
+    "b:start": "http-server -a localhost -c-1",
+    "dev": "npm-run-all b:compile b:start"
   },
-  "dependencies": {},
+  "dependencies": {
+    "kill-port": "^1.1.0"
+  },
   "devDependencies": {
     "http-server": "^0.11.1",
     "node-sass": "^4.9.0",

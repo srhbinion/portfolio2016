@@ -8,7 +8,7 @@
 // http://localhost:8080
 
 // Run Local Command
-$ ttp-server -a localhost -p 8000 -c-1
+$ http-server -a localhost -p 8000 -c-1
 
 ## Commit Messages
 
