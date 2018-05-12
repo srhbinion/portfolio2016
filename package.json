@@ -5,13 +5,16 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch src/styles -o dist",
-    "start": "http-server -a localhost -p 8000 -c-1"
+    "build:compile": "node-sass -w src/styles/main.scss -o dist/css",
+    "build:start": "http-server -a localhost -p 8087 -c-1",
+    "dev": "npm-run-all -p build:*"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.3",
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
     "http-server": "^0.11.1",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
   },
   "repository": {
     "type": "git",

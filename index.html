@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Sarah Binion Designer and UI Developer</title>
-    <link rel="stylesheet" type="text/css" href="dist/main.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
   </head>
   <body>
     <div class="site">
@@ -13,3 +13,17 @@
     <script src="dist/jsbundle.js"></script>
   </body>
 </html>
+
+<!--
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --watch src/styles/main.scss -o dist",
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true src/scss/ -o dist/css",
+    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
+
+
+-->
