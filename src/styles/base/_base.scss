@@ -1,31 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda');
+
 html { 
   background-color: black; 
   color: white; 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Monda', Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Julius Sans One', 'Verdana', serif;
 }
 
 p { 
   border-left: 1px solid white; 
-  padding-left: 1rem; 
+  line-height: 1.8;
   margin-left: 2rem; 
   margin-top: 1.2rem; 
-  line-height: 1.8;
+  padding-left: 1rem; 
 }
 .site { 
-  display: flex; 
-  justify-content: center; 
-  flex-direction: row; 
   align-items: center; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
   padding-top: 20%; 
 }
 
 @media (max-width: 400px) { 
   p { 
     border-left: none; 
-    padding-left: 0; 
+    line-height: 1; 
     margin-left: 0; 
     margin-top: 0; 
-    line-height: 1; 
+    padding-left: 0; 
   }
 
   .site { 
