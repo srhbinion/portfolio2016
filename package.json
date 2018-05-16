@@ -4,7 +4,7 @@
   "description": "design development portfolio to demonstrate code skills for future clients and colaboration",
   "main": "index.html",
   "scripts": {
-    "compile-sass": "node-sass -w src/styles/main.scss -o css",
+    "compile-sass": "node-sass -w src/styles/main.scss -o dist",
     "dev": "concurrently \"npm run compile-sass\" \"npm run serve-http\"",
     "serve-http": "browser-sync start --server --files \"*.css\""
   },
