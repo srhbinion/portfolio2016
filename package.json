@@ -4,17 +4,13 @@
   "description": "design development portfolio to demonstrate code skills for future clients and colaboration",
   "main": "index.html",
   "scripts": {
-    "start": "node index.js",
-    "say-hello": "echo 'Hello World'",
-    "red": "npm run say-hello && echo 'echo NPM is awesome!'",
-    "clean": "rm -r dist && mkdir dist",
-    "build": "npm run clean && webpack"
+    "start": "npm install && gulp build"
   },
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.1"
   },
   "repository": {
     "type": "git",

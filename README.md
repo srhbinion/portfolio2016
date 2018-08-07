@@ -1,14 +1,17 @@
 
 ## Hosted
 
-// http://sarahbinion.com/
+http://sarahbinion.com/
 
-## Local
+## Local Static
 
-// http://localhost:8080
+http://localhost:3000
 
-// Run Local Command
-$ http-server -a localhost -p 8000 -c-1
+First build (install dependencies, build solution, and run server with watch)
+$ npm start
+
+Gulp Production Task
+$ gulp
 
 ## Commit Messages
 

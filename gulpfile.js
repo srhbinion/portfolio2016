@@ -41,5 +41,8 @@ gulp.task('watch', function() {
     gulp.watch('./src/images/*', ['images']);
 });
 
+//initial build
+gulp.task('build', ['sass','images','browserSync','default']);
+
 // Run all
 gulp.task('default', ['browserSync','watch']);
