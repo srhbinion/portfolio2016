@@ -6,17 +6,6 @@ $brand: orange;
 $brand--highlight: mediumvioletred;
 $brand--focus: violet; 
 
-html { 
-  background-color: white; 
-  color: $dk-grey; 
-  font-family: 'Monda', Helvetica, sans-serif;
-}
-
-main {
-  position: relative; 
-  margin: 1rem 1rem 1rem 220px;
-}
-
 h1 {
   font-family: 'Julius Sans One', 'Verdana', serif;
   font-size: 1.5rem;
@@ -36,41 +25,4 @@ p {
   font-size: 0.875rem;
   font-weight: 200;
   line-height: 1.8;
-}
-
-.description__text {
-  border-left: 1px solid white; 
-  margin-left: 2rem; 
-  margin-top: 1.2rem; 
-  padding-left: 1rem; 
-}
-
-.site { 
-  align-items: center; 
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-  padding-top: 20%; 
-}
-
-@media (max-width: 400px) {
-
-  main {
-    position: relative;
-    width: 100%; 
-    margin: 1rem;
-  }
-
-  .description__text {
-    border-left: none; 
-    line-height: 1; 
-    margin-left: 0; 
-    margin-top: 0; 
-    padding-left: 0; 
-  }
-
-  .site { 
-    flex-direction: column; 
-    margin-top: 30%; 
-  }
 }
