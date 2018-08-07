@@ -10,7 +10,12 @@
     "clean": "rm -r dist && mkdir dist",
     "build": "npm run clean && webpack"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/srhbinion/portfolio.git"
