@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sarah Binion | Designer &amp; UI Developer</title>
+    <description>Sarah Binion is a designer and ui developer from Chicago who believes good communication is good design.</description>
+    <link>http://sarahbinion.com/</link>
+    <atom:link href="http://sarahbinion.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Apr 2017 03:04:26 -0500</pubDate>
+    <lastBuildDate>Tue, 11 Apr 2017 03:04:26 -0500</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Bloc Jams</title>
+        <description>&lt;p&gt;Bloc Jams is a website I created during my bloc.io boot camp using JQuery and JavaScript. Additionally, this site utilizes bootstrap to maintain the grid system and JavaScript HTML5 Audio library facilitates the use of the best audio on any device and on any browser.&lt;/p&gt;
+
+&lt;h2 id=&quot;debugging&quot;&gt;Debugging&lt;/h2&gt;
+&lt;p&gt;While working on the code for this site, I utilized and learned the value of debugging with chrome “inspect element” and the “console” in developer tools.
+—&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jan 2016 10:00:00 -0600</pubDate>
+        <link>http://sarahbinion.com/01/post/2016/01/01/jams.html</link>
+        <guid isPermaLink="true">http://sarahbinion.com/01/post/2016/01/01/jams.html</guid>
+        
+        
+        <category>01</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Bloc Chat</title>
+        <description>&lt;p&gt;Bloc Chat is a site I created during my bloc.io boot camp using AngularJS to control the views and Firebase to hold the Real Time Chat data. Head over to github to see my code.&lt;/p&gt;
+
+&lt;h2 id=&quot;sample-code&quot;&gt;Sample Code&lt;/h2&gt;
+
+&lt;p&gt;While writing my code, I learned the importance of informative documentation and prototype naming standards to keep my code succinct.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;binChat.controller(&quot;LandingController&quot;, [&quot;$scope&quot;, &quot;$firebaseArray&quot;,&quot;Room&quot;, &quot;Message&quot;, function($scope, $firebaseArray, Room, Message) {
+    // &quot;room&quot; array features
+    $scope.chatRooms = {
+        // accesses &quot;room&quot; array
+        room: Room.allRooms,
+        // adds item to the &quot;room&quot; array
+        add: function(room){
+            // adds this info to new &quot;room&quot; item in array
+            $scope.chatRooms.room.$add({
+                name: $scope.newRoomName,
+                type: &quot;Room&quot;
+            });
+            // ng-model hold room name information
+            $scope.newRoomName =[];  
+        },
+        // removes item from &quot;room&quot; array
+        remove: function(room){
+            $scope.chatRooms.room.$remove(room); 
+        },
+        //shows the selected room as current room
+        set: function(room){
+            // toggles between rooms in bodypanel
+            $scope.currentRoom = !$scope.currentRoom;
+            // ability to call selected room name information
+            $scope.current = {
+                name: room.name,
+                roomId: room.$id
+        };
+    }
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;early-prototyes&quot;&gt;Early Prototyes&lt;/h2&gt;
+
+&lt;p&gt;While designing this application, I refactored the visuals with different treatments and styles to practice my CSS.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jan 2016 09:00:00 -0600</pubDate>
+        <link>http://sarahbinion.com/02/post/2016/01/01/chat.html</link>
+        <guid isPermaLink="true">http://sarahbinion.com/02/post/2016/01/01/chat.html</guid>
+        
+        
+        <category>02</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>Zoltar</title>
+        <description>&lt;p&gt;Ask Zoltar is a random fortune generating website written in JQuery with custom visuals in Sass (inspired by the Ask Zoltar machine from the movie BIG). Additional note, this site is created by installing a Jekyll gem and hosted with gh-pages.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jan 2016 08:00:00 -0600</pubDate>
+        <link>http://sarahbinion.com/03/post/2016/01/01/zoltar.html</link>
+        <guid isPermaLink="true">http://sarahbinion.com/03/post/2016/01/01/zoltar.html</guid>
+        
+        
+        <category>03</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+  </channel>
+</rss>
