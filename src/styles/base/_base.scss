@@ -1,41 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda');
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda");
 
-html { 
-  background-color: black; 
-  color: white; 
-  font-family: 'Monda', Helvetica, sans-serif;
+html {
+    background-color: black;
+    color: white;
+    font-family: "Monda", Helvetica, sans-serif;
 }
 
 h1 {
-  font-family: 'Julius Sans One', 'Verdana', serif;
+    font-family: "Julius Sans One", "Verdana", serif;
 }
 
-p { 
-  border-left: 1px solid white; 
-  line-height: 1.8;
-  margin-left: 2rem; 
-  margin-top: 1.2rem; 
-  padding-left: 1rem; 
+p {
+    border-left: 1px solid white;
+    line-height: 1.8;
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+    padding-left: 1rem;
 }
-.site { 
-  align-items: center; 
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-  padding-top: 20%; 
+.site {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20%;
 }
 
-@media (max-width: 400px) { 
-  p { 
-    border-left: none; 
-    line-height: 1; 
-    margin-left: 0; 
-    margin-top: 0; 
-    padding-left: 0; 
-  }
+@media (max-width: 400px) {
+    p {
+        border-left: none;
+        line-height: 1;
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 0;
+    }
 
-  .site { 
-    flex-direction: column; 
-    margin-top: 30%; 
-  }
+    .site {
+        flex-direction: column;
+        margin-top: 30%;
+    }
 }

@@ -1,1 +1,1 @@
-console.log("Hello webpack. Demo works");
+alert("Hello webpack. Demo works");
