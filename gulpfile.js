@@ -91,6 +91,8 @@ function css() {
   };
 exports.css = gulp.series(images, css);
 
+exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+
 // watch for file changes
 function watch(done) {
 
@@ -111,5 +113,5 @@ function watch(done) {
 };
 exports.watch = watch;
 
-exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+// default
 exports.default = gulp.series(exports.build, exports.watch);
