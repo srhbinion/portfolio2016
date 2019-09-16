@@ -26,4 +26,4 @@ jspm_packages/
 .env
 
 # Build
-dist/*
+build/*

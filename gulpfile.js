@@ -2,32 +2,31 @@ const
   // modules
   gulp = require('gulp'),
 
-  // development mode?
+  // development mode (additional tools)
   devBuild = (process.env.NODE_ENV !== 'production'),
 
-  // olders
+  // variables
   src = 'src/',
   build = 'build/'
+  app = '.';
 
   //packages
   newer = require('gulp-newer'),
   imagemin = require('gulp-imagemin'),
-
   noop = require('gulp-noop'),
   htmlclean = require('gulp-htmlclean'),
-
   concat = require('gulp-concat'),
   deporder = require('gulp-deporder'),
   terser = require('gulp-terser'),
   stripdebug = devBuild ? null : require('gulp-strip-debug'),
   sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
-
   sass = require('gulp-sass'),
   postcss = require('gulp-postcss'),
   assets = require('postcss-assets'),
   autoprefixer = require('autoprefixer'),
   mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano')
+  cssnano = require('cssnano'),
+  server = require('gulp-webserver');
 ;
 
 // image
@@ -41,7 +40,6 @@ function images() {
 	  .pipe(gulp.dest(out));
   
 };
-exports.images = images;
 
 // HTML processing
 function html() {
@@ -52,9 +50,8 @@ function html() {
 	  .pipe(devBuild ? noop() : htmlclean())
 	  .pipe(gulp.dest(out));
 };
-exports.html = gulp.series(images, html);
 
-// JavaScript processing
+// compile JS
 function js() {
 
 	return gulp.src(src + 'scripts/**/*')
@@ -66,9 +63,8 @@ function js() {
 	  .pipe(sourcemaps ? sourcemaps.write() : noop())
 	  .pipe(gulp.dest(build + 'scripts/'));
 };
-exports.js = js;
 
-// CSS
+// compile css
 function css() {
 
 	return gulp.src(src + 'styles/main.scss')
@@ -88,30 +84,44 @@ function css() {
 	  .pipe(sourcemaps ? sourcemaps.write() : noop())
 	  .pipe(gulp.dest(build + 'css/'));
   
-  };
-exports.css = gulp.series(images, css);
+};
 
-exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+// serve local html files with http-server
+function serve() {
+	gulp.src(app)
+    .pipe(server({
+      livereload: true,
+      open: true,
+      fallback: 'index.html'
+    }));
+};
 
 // watch for file changes
 function watch(done) {
 
 	// image changes
-	gulp.watch(src + 'images/**/*', images);
+	gulp.watch(src + 'assets/**/*', images);
   
 	// html changes
 	gulp.watch(src + 'html/**/*', html);
   
 	// css changes
-	gulp.watch(src + 'scss/**/*', css);
+	gulp.watch(src + 'styles/**/*', css);
   
 	// js changes
-	gulp.watch(src + 'js/**/*', js);
+	gulp.watch(src + 'scripts/**/*', js);
   
 	done();
   
 };
-exports.watch = watch;
 
-// default
-exports.default = gulp.series(exports.build, exports.watch);
+// tasks
+exports.images = images;
+exports.html = gulp.series(images, html);
+exports.css = gulp.series(images, css);
+exports.js = js;
+exports.watch = watch;
+exports.serve = serve;
+
+exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+exports.default = gulp.series(exports.build, exports.watch, exports.serve);

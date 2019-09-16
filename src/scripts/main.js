@@ -1,1 +1,1 @@
-alert("Hello webpack. Demo works");
+window.console.log('JS works!');
