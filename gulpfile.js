@@ -112,7 +112,6 @@ function watch(done) {
 	gulp.watch(src + 'scripts/**/*', js);
   
 	done();
-  
 };
 
 // tasks
